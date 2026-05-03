@@ -1,0 +1,1808 @@
+🚀 Starting Navigation Experiments. Provider: qwen_dashscope, Model: qwen-vl-plus, AgentMode: llm
+🧾 Error log file: D:/Nav_images/results_NUM_qwen-vl-plus_COT\error_logs\errors_qwen-vl-plus_llm_20251225_232023.jsonl
+
+========== Maze: Maze_11x11_D2_T10_J10+2 ==========
+[Maze_11x11_D2_T10_J10+2] Nodes: 24, Target Episodes: 48
+[Maze_11x11_D2_T10_J10+2] Loaded precomputed episode pairs: 20
+
+--- Episode 1 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 10) -> Goal: (10, 3) | Shortest: 5 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(5, 10) | facing=east (1) | arrival(virtual)=west (3)
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromWest_NES_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 13.75s
+[LLM raw]: THINK: In the current triple-perspective view, the leftmost and rightmost views (1 and 3) show walls, indicating that those directions are blocked. The middle view (2) shows a navigable path with a teddy bear in front of it. Comparing this to the exploration history, I notice that moving forward (action 2) aligns with previously successful paths toward the destination. The destination node features a blue van, which is not visible in the current view but has been seen in previous steps when moving forward. Therefore, continuing straight ahead (action 2) is the most logical choice to progress toward the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromWest_NES_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=1
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.43s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a clear path leading to a yellow car, which is a landmark seen in the exploration history. The front view (2) shows a pink object, and the right view (3) is blocked by a wall. Comparing this to the exploration history, the yellow car appears to be a significant landmark that was encountered earlier and is likely part of the route to the destination. Since the destination is a blue van, and the yellow car is closer to the current position than any other visible landmarks, moving left (action 1) seems to be the most logical choice to progress towards the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromNorth_ESW_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.96s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a wooden rocking horse, which appears to be a landmark. This path seems navigable.
+- View 2 (front): Displays a yellow truck, another landmark. This path also appears navigable and is directly in front of me.
+- View 3 (right): Appears to be a wall, indicating an impassable direction.
+
+Comparing this to the exploration history, I notice that the yellow truck (seen in view 2) was previously encountered during earlier steps, suggesting it is part of the maze's navigable path. The presence of the truck aligns with the direction I previously took toward the destination, which involves the blue van.
+
+Given that the truck is directly in front of me and has been part of the navigable path before, moving forward (action 2) seems like the most logical choice. This action should lead me closer to the destination, as the truck likely guides me along the correct route.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.59s
+[LLM raw]: THINK: In the current triple-perspective view, the left (1) and front (2) directions appear navigable, while the right (3) is a wall. The red car, which matches the destination object in the overview image, is visible directly in front (2). Comparing this to the exploration history, it seems I am approaching the destination from a different angle than before. Moving forward (2) will likely lead me directly to the red car, which is the target. This is more efficient than turning around or going left, as those paths would not bring me closer to the destination as quickly.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.93s
+[LLM raw]: THINK: In the current triple-perspective view, the left (1) and front (2) directions appear to be navigable paths, while the right (3) direction is blocked by a wall. The left view shows a ship, which is not relevant to the destination. The front view shows an empty path leading forward, and the right view shows a robot, which is also not relevant. Comparing this to the exploration history, it seems that moving forward (2) would continue progress along the path that has been previously explored and is likely to lead closer to the destination, which is a blue van. Moving left (1) might lead to a different path that hasn't been explored yet, but it doesn't seem to be directly leading towards the van. Therefore, the best action is to move forward (2).
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.14s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a navigable path with a red bicycle visible, indicating a clear direction forward.
+- View 2 (center) is a wall, so this direction is impassable.
+- View 3 (right) also shows a wall, making it an invalid option.
+
+Comparing this to the exploration history, we can see that moving left (View 1) aligns with previously successful paths toward the destination. The presence of the bicycle suggests a continuation of the path we've been following, which has consistently led us closer to the target object (the blue van).
+
+Given this reasoning, the best valid action to take is to move left (Action 1), as it provides a clear and navigable path forward, likely shortening the route to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 25.26s
+[LLM raw]: THINK: In the current triple-perspective view, the left direction (1) shows a clear path with a green dinosaur-like object visible ahead. The middle and right views (2 and 3) appear to be walls, indicating no navigable paths in those directions. Comparing this to the exploration history, it seems that moving left (1) aligns with previously successful navigation steps that led to significant progress toward the destination. Since the goal is to reach the blue van, and the left path appears unobstructed and consistent with prior successful movement, choosing action 1 is the most logical choice to continue advancing efficiently.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 26.42s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a yellow table, which appears to be a navigable path. Direction 2 (front) shows a blue robot-like object, and direction 3 (right) shows a red car, both of which are also navigable paths. Comparing this to the exploration history, it seems that moving left (direction 1) might lead to a more direct route towards the destination, as previous steps have shown progress in that direction. The destination is a blue van, which has not been directly seen yet, but the left path seems promising based on prior exploration.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.31s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a clear path with a red bicycle visible, suggesting it is navigable. View 2 (center) appears to be a wall, and view 3 (right) also shows a wall with a pink object in the distance. Based on the exploration history, the agent has been moving through corridors and avoiding walls. The destination node features a blue van, which is not visible in the current view. However, the left path (view 1) seems promising as it aligns with previous successful navigation paths that led to new areas. Choosing view 1 (left) is the best option because it provides an open path forward, potentially leading to the destination more directly than the other options.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=12
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.24s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a clear path with a green dinosaur visible in the distance. Direction 2 (center) is blocked by a wall, and direction 3 (right) also shows a wall. Based on the exploration history, moving left (direction 1) aligns with previously navigated paths that led to landmarks closer to the destination. The blue van, which is the target, was last seen in a similar leftward direction during earlier steps. Therefore, choosing direction 1 is the most logical choice to continue progressing toward the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.27s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a table, the front view (2) shows a blue humanoid figure, and the right view (3) shows a red car. The left view (1) appears to be an open path, while the front and right views are blocked by walls or objects that do not provide a clear path forward.
+
+Comparing this to the exploration history, the agent has previously moved through various paths and landmarks, including a rocket, a rocking horse, and a blue whale. The current position seems to be near a section of the maze that has been explored before, specifically near the area where the red car was previously seen.
+
+Given the goal is to reach the destination, which is a blue van, the best action is to move left (1). This direction appears to be an open path and aligns with the exploration history, suggesting it could lead to a more direct route towards the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 32.50s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a clear path with a bicycle visible in the distance, suggesting it is navigable. View 2 (center) and view 3 (right) appear to be walls, as they show no visible paths or landmarks. Comparing this to the exploration history, the agent has been moving through similar corridors and has not yet reached the destination, which is a blue van. The left path (view 1) seems to be the most promising direction to continue exploring, as it aligns with the general direction the agent has been taking in previous steps. Moving left is likely to lead to new areas that may contain the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=16
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 34.91s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a clear path with a green dinosaur figure in the distance.
+- View 2 (center) is a wall, indicating no navigable path.
+- View 3 (right) also shows a wall.
+
+Given this information, moving left (action 1) is the only viable option as it leads to an open path. Comparing this to the exploration history, moving left aligns with previously successful navigation through open paths. The destination node features a blue van, which has not yet been directly approached in the history, but moving left continues progress toward unexplored areas that may lead to the van.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Stop: node (3, 5) visited 4 times (>3). Failure.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: 0.111 | DIR_ACC: 0.556 | NeighborHit: 0 | GoalChose: 0 | StopReason: revisit_limit | Steps: 18
+
+--- Episode 2 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (1, 7) -> Goal: (10, 6) | Shortest: 6 | Longest_steps: 17 | Max_steps: 17
+[Init] Start pos=(1, 7) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromSouth_WNE_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 15.64s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): A brown horse is visible, indicating a navigable path.
+- View 2 (front): A pink object is visible, suggesting another navigable path.
+- View 3 (right): A blue robot-like figure is visible, indicating a navigable path as well.
+
+Comparing this to the exploration history, I notice that the pink object in the front view (View 2) was previously seen in Step 3. This suggests that moving forward might lead me closer to the destination, which is the orange helicopter located further down the path.
+
+Given the goal of finding a shortcut to the destination, moving forward (View 2) seems to be the most direct route based on the previous exploration experience. The other options (left or right) do not appear to lead directly towards the destination and may involve unnecessary detours.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromSouth_WNE_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromWest_NES_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.80s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, the front view (2) shows a teddy bear, and the right view (3) shows a navigable path leading to a rocket. Comparing this to the exploration history, I notice that moving forward (2) would lead me into a dead-end with the teddy bear, while moving right (3) aligns with a previously successful path that led to the destination in the few-shot example. The destination node features a helicopter, which is not visible here, but the rightward path has consistently led to progress in the past. Therefore, moving right (3) is the best choice as it likely leads to a more direct route toward the destination.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromNorth_ESW_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.22s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a rocking horse, the front view (2) shows a yellow truck, and the right view (3) is a wall. Based on the exploration history, the yellow truck appears to be a recurring landmark that has been seen multiple times, suggesting it might be part of a path leading toward the destination. The destination node features a helicopter, which is not visible in the current view. However, since the yellow truck was previously encountered and seems to be along a navigable path, moving forward (action 2) could potentially lead to a more direct route toward the destination. Moving left (action 1) would take us away from the apparent path, making it less likely to reach the destination quickly.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 19.23s
+[LLM raw]: THINK: In the current triple-perspective view, the left (1) and front (2) directions appear to be navigable paths, while the right (3) is a wall. The object in the front (2) is a red car, which is not the destination. The object in the left (1) is a blue narwhal, which is also not the destination. However, comparing this view with the exploration history, it seems that moving left (1) could lead to a more direct path toward the destination, as previous steps have shown that moving left often leads to new areas of the maze. Given the layout and the objects seen so far, moving left (1) appears to be the best option to continue exploring and potentially find a shortcut to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Reached NEIGHBOR of goal at (7, 6).
+  -> Nav Success. Neighbor_SPL: 1.000. Executing FINAL STEP...
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromWest_NES_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=final | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.18s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): A rocking horse is visible, indicating a navigable path.
+- View 2 (front): The path appears clear and leads forward, but no immediate landmarks are visible.
+- View 3 (right): A small car is visible, suggesting another navigable path.
+
+Comparing this to the exploration history, I notice that the destination node contains a helicopter. The current view shows a clear path forward (View 2), which seems to be leading directly toward the area where the helicopter might be located. Additionally, the previous steps indicate that moving forward has been effective in progressing through the maze.
+
+Given this reasoning, the best action to take is to move forward (View 2) as it appears to be the most direct route toward the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+  -> Final step LANDED on GOAL. goalChose=1. Goal_SPL: 1.000
+  [Result] NeighborSPL: 1.000 | GoalSPL: 1.000 | DPS: 0.633 | DIR_ACC: 0.833 | NeighborHit: 1 | GoalChose: 1 | StopReason: goal_reached | Steps: 6
+
+--- Episode 3 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 10) -> Goal: (3, 3) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(7, 10) | facing=west (3) | arrival(virtual)=east (1)
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromEast_SWN_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=0
+[Auto-Move] Only one way: front. Skipping Agent.
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 15.71s
+[LLM raw]: THINK: In the current triple-perspective view, the left (1) and front (2) directions appear navigable, while the right (3) is a wall. The object in the front (2) is a pink blob-like figure, which does not match the destination (a blue and white boat). However, the left (1) direction shows a yellow truck, which was previously seen in the exploration history near the destination. Given that the yellow truck was closer to the boat in the previous trip, moving left (1) seems like a promising shortcut towards the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromNorth_ESW_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.49s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a rocking horse, which appears to be a navigable path.
+- View 2 (front): Shows a yellow truck, also a navigable path.
+- View 3 (right): Appears to be a wall, indicating an impassable direction.
+
+Comparing this to the exploration history, I notice that the yellow truck (seen in view 2) was previously encountered and is part of the maze's navigable paths. The rocking horse (seen in view 1) has not been directly connected to the destination in the history, but it might lead to a new section of the maze.
+
+Given the goal to find a shortcut to the destination (the boat), and considering the boat is visible in the overview image, I should prioritize moving towards areas that have been explored before and are closer to the boat. Since the yellow truck is a familiar landmark and likely leads to a more direct path, I will choose to move forward.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.89s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a wall and no clear path forward.
+- View 2 (front): Displays a red car and a navigable path ahead.
+- View 3 (right): Shows a wall.
+
+Given this, moving forward (action 2) appears to be the most viable option as it leads into an open path. Comparing this with the exploration history, I notice that the red car is a familiar landmark from earlier steps, suggesting that continuing straight might lead me closer to the destination, which is the boat visible in the overview image. Moving left (action 1) seems less promising as it leads into a wall. Therefore, the best action to take is to move forward.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+  -> Reached NEIGHBOR of goal at (3, 5).
+  -> Nav Success. Neighbor_SPL: 1.000. Executing FINAL STEP...
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=final | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.04s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, the front view (2) shows a table and an open path, and the right view (3) shows a wall. The destination node, as seen in the overview image, contains a boat. From the history of this trip, we can see that the agent has already passed by the boat on the left side of the maze. Therefore, moving forward (action 2) would likely lead to a dead end or a less direct path compared to turning left (action 1), which is the direction where the boat was previously observed. Since the goal is to find the shortest route to the boat, turning left (action 1) is the most logical choice.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Final step LANDED on GOAL. goalChose=1. Goal_SPL: 1.000
+  [Result] NeighborSPL: 1.000 | GoalSPL: 1.000 | DPS: 0.821 | DIR_ACC: 1.000 | NeighborHit: 1 | GoalChose: 1 | StopReason: goal_reached | Steps: 6
+
+--- Episode 4 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 3) -> Goal: (5, 10) | Shortest: 5 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(10, 3) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromSouth_WNE_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.44s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a yellow car with a rabbit on top, which appears to be a landmark from the exploration history. The front view (2) shows a yellow duck near a wall, and the right view (3) is blocked by a wall. Comparing this to the exploration history, the left view (1) seems to lead towards a familiar path that was previously explored and may lead closer to the destination, which is the pink blob in the overview image. The front view (2) also shows a familiar landmark (the yellow duck), but it might not be the most direct path to the destination. Therefore, moving left (1) is likely the best choice as it aligns with a previously explored path that could lead directly to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromEast_SWN_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.87s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, the front view (2) shows a rabbit toy, and the right view (3) shows a blue whale toy. Based on the exploration history, the rabbit toy is a landmark that has been seen before, indicating that moving forward (2) might lead to a familiar path. The destination node, as shown in the overview image, contains a pink object, which is not visible in the current view. However, since the rabbit toy is a consistent landmark, moving forward (2) seems to be the most logical choice to continue along a potentially shorter route towards the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromEast_SWN_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromNorth_ESW_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.58s
+[LLM raw]: THINK: In the current triple-perspective observation, view 2 (front) shows a guitar, which appears to be a navigable path. View 1 (left) and view 3 (right) both show walls, indicating these directions are blocked. Comparing this to the history of exploration, it seems I have been moving through corridors with various objects like cars, helicopters, and animals. The destination node, as shown in the overview image, contains a pink object that resembles a snail. Based on the history, I have been moving forward through corridors, and the current view suggests I am still in a corridor with a navigable path ahead. Moving forward (action 2) is the most logical choice as it aligns with the previous movement pattern and is likely to lead me closer to the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromNorth_ESW_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 1) | triple_view=Node_001_X10_Y1_FromWest_NES_LFR.png | overview=Node_001_X10_Y1_Overview.png | phase=normal | step=5
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromEast_SWN_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromSouth_WNE_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.87s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a navigable path with a blue and white bag visible in the distance. View 2 (front) shows a rabbit toy directly ahead, which appears to be a landmark. View 3 (right) is blocked by a wall. Comparing this to the exploration history, the rabbit toy seen in view 2 matches a landmark previously encountered, suggesting that moving forward could lead to a familiar path. Since the destination node features a pink object in the center, moving forward (view 2) seems to align with the path leading toward the destination. Turning left (view 1) might lead to a different path, but it doesn't appear to be the most direct route based on the landmarks observed.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromSouth_WNE_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromWest_NES_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.26s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a wall, indicating that moving left is not an option. The front view (2) shows a clear path leading to a blue van, which appears to be a navigable path. The right view (3) also shows a wall, making it impassable. Comparing this with the exploration history, the blue van in the front view (2) seems to be part of the route taken previously, suggesting that continuing forward could lead to the destination. The destination node features a pink object, and based on the history, moving forward appears to be the most direct path to reach it.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromWest_NES_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=10
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromSouth_WNE_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.76s
+[LLM raw]: THINK: In the current triple-perspective view, the left (1) and front (2) directions appear to be navigable paths, while the right (3) is a wall. The object in the center (front view) is a yellow duck, which is not the destination. The destination appears to be further down the path ahead, as indicated by the overview image showing a pink blob-like object at the end of the corridor. Given the history of exploration, it seems that moving forward (2) would continue progress toward the destination, whereas turning left (1) might lead to a less direct route. Therefore, the best action is to move forward.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=12
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.59s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a blue narwhal-like object and appears to be an open path. The front view (2) shows a rocket-shaped object directly ahead, which seems like a navigable path. The right view (3) is blocked by a wall. Comparing this to the exploration history, the agent has previously moved through paths with similar objects, such as the yellow car and the pink snail. The destination node features a pink snail-like object, which suggests that moving forward (2) might lead closer to the destination. Since the front path (2) is clear and aligns with the direction of previous successful movements toward landmarks, it is the best choice.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+  -> Reached NEIGHBOR of goal at (5, 8).
+  -> Nav Success. Neighbor_SPL: 0.286. Executing FINAL STEP...
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromEast_SWN_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=final | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.87s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a navigable path with a yellow truck visible, suggesting it is a valid direction to proceed.
+- View 2 (center) appears to be a wall, as there is no clear path or landmark visible.
+- View 3 (right) also appears to be a wall, similar to view 2.
+
+Comparing this to the exploration history, the agent has previously moved through paths that led to various landmarks. The destination node, as shown in the overview image, contains a pink blob-like object. Based on the history, the agent has not yet reached this specific area.
+
+Given the options, moving left (action 1) seems to be the most promising choice because it leads to a navigable path with a visible landmark (the yellow truck), which aligns with the agent's previous successful navigation through open paths. This direction is likely to bring the agent closer to the destination node.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Final step MISSED goal. goalChose=0. Goal_SPL: 0.0
+  [Result] NeighborSPL: 0.286 | GoalSPL: 0.000 | DPS: 0.209 | DIR_ACC: 0.600 | NeighborHit: 1 | GoalChose: 0 | StopReason: neighbor_final_step_miss | Steps: 15
+
+--- Episode 5 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 8) -> Goal: (0, 7) | Shortest: 6 | Longest_steps: 20 | Max_steps: 20
+[Init] Start pos=(10, 8) | facing=south (2) | arrival(virtual)=north (0)
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromNorth_ESW_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 13.15s
+[LLM] Qwen request FAILED after 13.15s (attempt 1/4): Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+LLM error: Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+  -> Episode Aborted due to LLM error.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: 0.000 | DIR_ACC: 0.000 | NeighborHit: 0 | GoalChose: 0 | StopReason: llm_error | Steps: 0
+
+--- Episode 6 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (3, 2) -> Goal: (7, 10) | Shortest: 7 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(3, 2) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromSouth_WNE_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.17s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, the front view (2) shows a boat and a dinosaur, and the right view (3) shows a beach ball and a car. Based on the exploration experience from the previous trip, I can infer that moving forward (2) will likely lead me deeper into the maze, potentially bringing me closer to the destination node, which contains a teddy bear. The right view (3) seems to lead away from the direction of the teddy bear, so it is less likely to be the optimal path. Therefore, moving forward (2) is the best choice.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromSouth_WNE_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.19s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a red bicycle in a hallway, which appears to be a navigable path. View 2 (front) shows a green dinosaur statue, also in a hallway, suggesting this is a valid path forward. View 3 (right) is a wall, indicating an impassable direction. Comparing this to the exploration history, the green dinosaur statue is a familiar landmark, and moving forward (view 2) aligns with the path previously taken toward the destination. The destination node features a teddy bear, which is not visible yet, but moving forward seems to be the most direct route based on prior exploration.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.91s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a table in a hallway, view 2 (front) shows a blue humanoid figure, and view 3 (right) shows a red car. The left path (view 1) appears to be an open hallway, suggesting it is navigable. Comparing this to the exploration history, the left path has not been explored yet, and it seems promising as it leads into a new area. The destination node features a teddy bear, which is not visible in the current view but might be further down the left path. Moving left (action 1) could potentially lead to the destination more directly than the other options.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.53s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a navigable path with a red bicycle visible in the distance.
+- View 2 is a wall, indicating an impassable direction.
+- View 3 (right) shows a navigable path with a brown horse visible in the distance.
+
+Comparing this to the exploration history, we can see that moving left (View 1) aligns with previously taken paths that led to significant landmarks. The red bicycle seen in View 1 is a familiar landmark from earlier steps, suggesting that continuing in this direction could lead to a known route toward the destination.
+
+The destination node features a teddy bear, which is not visible in the current view. However, based on the consistent pattern of navigating through paths with recognizable landmarks, moving left (View 1) seems to be the most logical choice to continue progressing toward the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.00s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a clear path leading forward with a dinosaur figure visible ahead.
+- View 2 (center) is a wall, indicating no passage in this direction.
+- View 3 (right) also shows a wall, indicating no passage in this direction.
+
+Comparing this to the exploration history, it appears that moving left (View 1) aligns with previously navigated paths that led toward key landmarks. The dinosaur figure seen in View 1 matches an object encountered earlier, suggesting continuity in the route. Moving left seems to be the most direct path forward without unnecessary detours.
+
+Given the goal of reaching the teddy bear at the destination node, moving left (Action 1) is the best choice as it maintains progress along a previously successful route and avoids dead ends.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.23s
+[LLM raw]: THINK: In the current triple-perspective view, the left (1) and front (2) directions appear to be navigable paths, while the right (3) direction is blocked by a wall. The left path shows a table, which was also seen in the exploration history, suggesting it might lead to familiar territory. The front path shows a blue humanoid figure, which is a new landmark not previously encountered. Given that the destination node features a teddy bear, which is not visible in the current view, I should prioritize exploring the left path (1) as it seems to align with previously explored areas and may lead to a more direct route to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.99s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a navigable path with a bicycle visible in the distance, suggesting a clear route forward. View 2 is a wall, and view 3 (right) shows a horse, which appears to be a landmark but not directly leading toward the destination. Comparing this to the exploration history, moving left (view 1) aligns with previously taken paths that led toward key landmarks like the dinosaur and the bag, indicating a consistent route through the maze. Moving right (view 3) would lead away from the general direction of the destination, which is further ahead and likely straight or slightly left based on prior exploration. Therefore, moving left (action 1) is the best choice to continue progressing toward the destination efficiently.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.86s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a clear path leading to a dinosaur figure, which is a landmark seen in the exploration history. The middle view (2) appears to be a wall, and the right view (3) shows a bag, which is not a significant landmark for navigation. Comparing this to the exploration history, the dinosaur figure seems to be a consistent landmark that has been encountered multiple times, suggesting it is part of a navigable path. Since the destination node features a teddy bear, and the dinosaur figure is closer to the general direction of the destination than the bag, moving left (action 1) would likely lead to a more direct route towards the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.52s
+[LLM raw]: THINK: In the current triple-perspective view, the left and front views (1 and 2) show navigable paths with visible landmarks such as a table and a robot-like figure. The right view (3) appears to be a wall, indicating it is not a viable path. Comparing this to the exploration history, I notice that moving forward (action 2) aligns with previously taken paths that led to significant landmarks like the dinosaur and the bag. Given the goal of reaching the teddy bear at the destination node, moving forward seems most promising as it continues along a path that has consistently led to key points in the maze. This direction likely shortens the route to the destination compared to turning left (action 1), which might lead to a less direct path.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromSouth_WNE_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=11
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromEast_SWN_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.46s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, the front view (2) shows a horse, and the right view (3) shows a pink object. Based on the history of exploration, the pink object appears to be a landmark that has been seen before in the maze. The destination node features a teddy bear, which is not visible in the current view. However, the pink object seems to be closer to the path leading to the destination compared to the horse. Therefore, moving towards the pink object (action 3) is likely to lead to a more direct route to the destination.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromSouth_WNE_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=13
+[Auto-Move] Only one way: right. Skipping Agent.
+  -> Reached NEIGHBOR of goal at (5, 10).
+  -> Nav Success. Neighbor_SPL: 0.429. Executing FINAL STEP...
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromWest_NES_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=final | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.52s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a wall, indicating it is not a navigable path.
+- View 2 (front) shows a clear path leading towards a teddy bear, which matches the destination node shown in the overview image. This suggests that moving forward will lead directly to the target.
+- View 3 (right) shows another wall, indicating it is also not a navigable path.
+
+Comparing this to the exploration history, the agent has been navigating through corridors and has encountered various objects, but the current view aligns closely with the destination node. Moving forward (action 2) is the most direct route to reach the teddy bear, as it is already visible in the front view.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+  -> Final step LANDED on GOAL. goalChose=1. Goal_SPL: 0.467
+  [Result] NeighborSPL: 0.429 | GoalSPL: 0.467 | DPS: 0.329 | DIR_ACC: 0.667 | NeighborHit: 1 | GoalChose: 1 | StopReason: goal_reached | Steps: 15
+
+--- Episode 7 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (3, 2) -> Goal: (10, 8) | Shortest: 6 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(3, 2) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromSouth_WNE_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.20s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, the front view (2) shows a boat with a dinosaur on it, and the right view (3) shows a beach ball. Based on the exploration history, I have not yet seen the yellow rubber duck, which is the destination object. The path to the right (3) appears to be open and potentially leads to new areas that might contain the duck. Since moving forward (2) seems to lead back into a previously explored area with the boat, the best choice is to move right (3) to explore a new path that could lead to the destination more efficiently.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromWest_NES_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.42s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a wall and a rabbit, indicating a dead end or a corner.
+- View 2 (center) is a solid wall, confirming no path exists in this direction.
+- View 3 (right) shows a clear path with a guitar visible, suggesting a navigable route.
+
+Comparing this to the exploration history, the rabbit seen in view 1 was previously encountered, indicating we are in a similar area. The destination, a yellow rubber duck, was not seen in the previous steps, but based on the layout, it seems likely to be further along the path we are currently facing.
+
+Given that view 3 shows a navigable path, moving right (action 3) is the best choice as it aligns with the direction where the guitar was previously seen, suggesting continuity in the path. This move is more likely to lead us closer to the destination compared to moving left, which appears to be a dead end.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromNorth_ESW_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 1) | triple_view=Node_001_X10_Y1_FromWest_NES_LFR.png | overview=Node_001_X10_Y1_Overview.png | phase=normal | step=3
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromEast_SWN_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromSouth_WNE_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.11s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a pathway leading to a bag and a bicycle, indicating a navigable path.
+- View 2 (front) shows a rabbit toy directly in front of me, which is a landmark but not leading towards the destination.
+- View 3 (right) appears to be a wall, so it's impassable.
+
+Comparing this to the exploration history, I have previously seen the rabbit toy and other landmarks like the guitar and car. The destination is a yellow duck, which has not been directly seen yet. The left path (View 1) seems promising as it leads to new areas that might contain the duck.
+
+Given this reasoning, moving left (Action 1) is the best choice as it opens up a new path that could potentially lead to the destination more efficiently than going straight or turning around.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromEast_SWN_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromSouth_WNE_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.96s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a red bicycle in a hallway, the front view (2) shows a green dinosaur statue, and the right view (3) is a wall. Based on the exploration history, the green dinosaur statue appears to be a recurring landmark. The destination node features a yellow rubber duck, which has not been seen yet. However, the left view (1) seems to lead into a new area that might contain the duck. Since the front view (2) leads back to a familiar path with the dinosaur, it is less likely to provide a shortcut to the duck. Therefore, moving left (1) is the best option to explore a new path that might lead to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromEast_SWN_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromSouth_WNE_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.11s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a wall, view 2 (front) shows a path leading to a rocking horse, and view 3 (right) shows another path leading to a green dinosaur. Based on the exploration history, I have previously seen the green dinosaur in a similar location, which suggests it is part of the maze's landmarks. The destination node features a yellow rubber duck, which is not visible in the current view. However, comparing the current position with the exploration history, moving forward (view 2) seems to align with the path that has been navigated before, potentially leading closer to the destination. Moving right (view 3) might also lead to new areas, but based on the previous paths taken, moving forward appears to be the more direct route.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromSouth_WNE_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=10
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromWest_NES_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.85s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a pink object in a corridor, view 2 (front) shows a blue robot-like figure, and view 3 (right) is a wall. The left view (1) appears to be a navigable path, while the front view (2) also seems accessible but leads toward the robot, which is not the destination. The right view (3) is blocked by a wall. Based on the exploration history, the destination is a yellow rubber duck, which was previously seen in the rightmost part of the maze. Since the left view (1) seems to lead away from the robot and potentially towards the area where the duck was last seen, it is the best choice to continue exploring.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromSouth_WNE_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=12
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromWest_NES_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.33s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) and view 3 (right) both show walls, indicating that movement in those directions would be blocked. View 2 (front) shows a clear path forward with no immediate obstacles. Based on the history of exploration, I have been navigating through corridors and avoiding dead ends. The destination node features a yellow rubber duck, which is not visible in the current view but has been seen in previous exploration experiences. Given the layout and the direction of the path ahead, moving forward (view 2) seems to be the most logical choice as it aligns with the general direction of travel observed so far and avoids unnecessary detours.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromWest_NES_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=14
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.29s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a clear path leading to a yellow car and further down the maze. View 2 (front) shows a pink blob-like object in a dead-end or corner, which does not seem to lead towards the destination. View 3 (right) is a wall, indicating an impassable direction. Comparing this to the exploration history, it appears that moving left (view 1) aligns with previously successful paths that led to navigable areas of the maze. The destination, a yellow rubber duck, seems to be located further down the maze, likely accessible through the path on the left.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromNorth_ESW_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.08s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a wooden rocking horse, which appears to be a navigable path. View 2 (front) shows a yellow truck, also a navigable path. View 3 (right) is a wall and thus impassable. Comparing this to the exploration history, the yellow truck in view 2 seems to be a familiar landmark that has been seen before, suggesting it might be part of the route taken previously. The rocking horse in view 1 is a new landmark, indicating a different path. Given the goal to find a shortcut to the destination (the yellow rubber duck), and considering the previous paths taken, moving forward (view 2) seems more likely to lead directly to the destination as it aligns with the previously explored route.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.49s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a wall, view 2 (front) shows a red car and a navigable path, and view 3 (right) shows a wall. Based on the history of exploration, I have been moving through various paths and landmarks, including a blue narwhal and a yellow toy truck. The destination node is a yellow rubber duck, which is not visible in the current view. However, the red car in view 2 suggests that this path might lead closer to the destination. Given that view 2 is the only navigable path, it is the best choice to continue exploring towards the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+  -> Max steps reached. Failure.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: 0.194 | DIR_ACC: 0.611 | NeighborHit: 0 | GoalChose: 0 | StopReason: max_steps | Steps: 18
+
+--- Episode 8 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 3) -> Goal: (7, 10) | Shortest: 5 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(7, 3) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromSouth_WNE_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.87s
+[LLM raw]: THINK: In the current triple-perspective view, I can see the following:
+
+- **View 1 (left):** A teddy bear is visible, which matches the destination object. This suggests that moving left might lead me directly to the goal.
+- **View 2 (front):** A blue narwhal-like object is present, but this does not seem relevant to the destination.
+- **View 3 (right):** A small blue van is visible, which also does not appear to be related to the destination.
+
+Comparing this to the exploration history, I recall that the teddy bear was the target object in previous steps, and it was located in a similar position to what I see now in View 1. This indicates that moving left (Action 1) would likely bring me closer to the destination without unnecessary detours.
+
+Given this reasoning, the best action to take is to move left (Action 1), as it aligns with the goal of reaching the teddy bear efficiently.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromEast_SWN_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromNorth_ESW_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.00s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a wall, view 2 (front) shows a guitar, and view 3 (right) shows a navigable path with a bag and a bicycle in the distance. Based on the exploration experience, I have previously encountered the teddy bear at the destination node. The current position appears to be near the guitar, which is not the destination. To reach the destination quickly, moving forward (view 2) seems promising as it might lead me closer to the teddy bear. Moving right (view 3) could also potentially lead to the destination, but it seems less direct compared to moving forward.
+
+Given this reasoning, the best action to take is to move forward (view 2).
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromNorth_ESW_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=3
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 1) | triple_view=Node_001_X10_Y1_FromWest_NES_LFR.png | overview=Node_001_X10_Y1_Overview.png | phase=normal | step=4
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromEast_SWN_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromSouth_WNE_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.21s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a navigable path with a blue bag visible in the distance. This appears to be a valid direction to proceed.
+- View 2 (front): Displays a rabbit, which is a landmark but not directly related to the destination (a teddy bear). Moving forward may not lead me closer to the target.
+- View 3 (right): Appears to be a wall, indicating an impassable path.
+
+Comparing this to the exploration experience and history, I notice that the rabbit seen in the front view (View 2) was previously encountered during earlier steps, suggesting that moving forward might not be the most efficient route. Instead, turning left (View 1) seems promising as it leads to a new area with a bag, which could potentially guide me toward the destination more directly.
+
+Given this reasoning, the best action to take is to move left (Action 1), as it offers a clearer path forward compared to moving straight ahead.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromEast_SWN_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromSouth_WNE_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.16s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a navigable path with a red bicycle visible in the distance.
+- View 2 (front) shows a navigable path with a green dinosaur toy directly ahead.
+- View 3 (right) is blocked by a wall.
+
+Comparing this to the exploration history, we can see that the agent has previously moved through paths similar to the one shown in view 1. The destination node features a large teddy bear, which was also seen in the exploration experience. Given the layout and the landmarks observed, moving forward (view 2) seems to align with the path leading towards the teddy bear.
+
+Therefore, the best valid action to take is to move forward (action 2), as it appears to be the most direct route towards the destination based on the spatial reasoning derived from the exploration history.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.02s
+[LLM raw]: THINK: In the current triple-perspective observation, I see the following:
+
+- View 1 (left): A table is visible, and the path appears to be open.
+- View 2 (front): A blue robot-like object is in front of me, and the path seems clear.
+- View 3 (right): A red car is visible, and the path appears to be open.
+
+Comparing this to the exploration history, I notice that the left path (View 1) has not been explored yet. The destination node, which contains a teddy bear, is likely further ahead based on the previous exploration experience. Since the left path (View 1) has not been traversed and seems to lead into an open area, it is reasonable to assume that moving left might provide a shortcut or a more direct route to the destination.
+
+Therefore, the best valid action to take is to move left (Action 1).
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.61s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a clear path with a red bicycle visible in the distance. View 2 (center) appears to be a wall, and view 3 (right) also shows a wall with a pink object partially visible. Based on the exploration history, moving left (view 1) aligns with previously navigated paths that led toward the destination node, which features a teddy bear. This suggests that continuing straight ahead (left) is the most logical choice to progress toward the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=11
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 26.24s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a clear path with a green dinosaur toy visible further down the hallway.
+- View 2 (center) is a wall, indicating no navigable path in this direction.
+- View 3 (right) shows a bag on the floor, but it does not appear to be leading directly toward the destination.
+
+Comparing this to the exploration history, the left path (View 1) has consistently led to new areas and landmarks, suggesting it is the most promising direction for progress. The destination node features a large teddy bear, which was previously seen in the exploration experience, indicating that moving left will likely bring us closer to the target.
+
+Therefore, the best valid action to take is to move left (Action 1).
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.60s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a yellow table in an open space, suggesting a navigable path. The front view (2) shows a blue and white robot-like object, which appears to be a landmark but not directly related to the destination. The right view (3) shows a red car and a narwhal figure, indicating another navigable path but further from the target.
+
+Comparing this to the exploration history, the left path (1) seems to lead towards areas with fewer obstacles and more open spaces, which could potentially shorten the route to the destination. The destination node features a large teddy bear, and based on the exploration experience, paths leading away from the robot and towards open spaces have been effective in reaching landmarks.
+
+Therefore, the best action to take is to move left (1), as it appears to offer a clearer and potentially shorter path to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.80s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a red bicycle in a hallway, which appears to be a navigable path. The middle view (2) is a wall, and the right view (3) shows a horse figure, also indicating a navigable path. Comparing this to the exploration history, it seems that moving left (1) has been a consistent direction leading towards new areas with landmarks. Given the goal of reaching the teddy bear at the destination node, moving left (1) aligns with the previous successful paths taken during exploration. This direction is likely to lead to a more direct route to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=15
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.73s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a clear path with a green dinosaur toy visible ahead.
+- View 2 (center) is a wall, indicating no passage in this direction.
+- View 3 (right) shows a bag on the floor, but it's not the target object.
+
+Comparing this to the exploration history, I notice that the green dinosaur was previously seen in a similar position, suggesting it might be part of a recurring landmark. The destination node features a teddy bear, which is not currently visible. However, based on the layout and previous paths taken, moving left (View 1) seems to align with the general direction towards the destination.
+
+Given this reasoning, the best valid action to take is to move left (Action 1), as it appears to be the most promising path towards the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.77s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a clear path with a yellow table visible in the distance. The front view (2) shows a blue and white object that appears to be a landmark from previous exploration, but it does not seem to lead directly toward the destination. The right view (3) shows a red car and a narwhal-like object, which are also familiar from earlier exploration but do not appear to be on the direct path to the destination.
+
+Comparing this to the exploration history, the left path (1) has been consistently navigable and has led to new areas without dead ends. The destination node, as shown in the overview image, features a teddy bear, which is not visible in the current view. However, based on the consistent pattern of exploration, moving left (1) seems to be the most promising direction to continue exploring and potentially find the teddy bear.
+
+Therefore, the best action to take is to move left (1).
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Max steps reached. Failure.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: 0.067 | DIR_ACC: 0.500 | NeighborHit: 0 | GoalChose: 0 | StopReason: max_steps | Steps: 18
+
+--- Episode 9 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 10) -> Goal: (10, 3) | Shortest: 5 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(5, 10) | facing=east (1) | arrival(virtual)=west (3)
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromWest_NES_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 13.32s
+[LLM raw]: THINK: In the current triple-perspective view, the leftmost and rightmost views (1 and 3) show walls, indicating that movement in those directions is blocked. The middle view (2) shows a navigable path with a teddy bear visible ahead. Comparing this to the exploration history, the teddy bear appears to be a recurring landmark, suggesting that moving forward (action 2) will likely continue progress along the established path. Since the destination is a blue van, and no direct path to the van is visible from this position, moving forward seems the most logical choice to continue exploring the maze and potentially reach the van.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromWest_NES_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=1
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 15.31s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a clear path leading to a yellow car, which is a landmark seen in the exploration history. The front view (2) shows a pink object, and the right view (3) is blocked by a wall. Comparing this to the exploration history, the yellow car appears to be a significant landmark that was encountered earlier and is likely closer to the destination (the blue van). Moving left (action 1) would lead towards the yellow car, which seems to be on a path that could potentially lead to the destination more directly than moving forward.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromNorth_ESW_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.49s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a wooden rocking horse, indicating a navigable path.
+- View 2 (front): Shows a yellow truck, which appears to be on a direct path forward.
+- View 3 (right): Appears to be a wall, as it is obstructed and no clear path is visible.
+
+Comparing this to the exploration history, I notice that the yellow truck was previously seen in a similar position, suggesting it is part of the route leading toward the destination. The destination node features a blue van, which is likely further along the same corridor. Since the yellow truck is directly in front of me and aligns with the direction of the destination, moving forward (action 2) seems to be the most efficient choice to continue progressing toward the goal.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.76s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a wall, the front view (2) shows a red car, and the right view (3) also shows a wall. The red car is a prominent landmark in the environment. Comparing this to the exploration history, the red car appears to be closer to the destination than other landmarks seen earlier. Given that the goal is to reach the blue van (destination), moving towards the red car seems like a logical step as it may lead to a more direct path or provide a better vantage point for identifying the next move towards the blue van.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 19.45s
+[LLM raw]: THINK: In the current triple-perspective view, the left (1) and front (2) directions appear to be navigable paths, while the right (3) direction shows a wall. The left view contains a ship, which is not relevant to the destination. The front view shows an empty path leading forward, which seems promising for continuing exploration. The right view shows a wall, so moving right is not an option. Based on the history of this trip, we have been exploring various paths and landmarks, but the most recent actions suggest that moving forward (2) is likely to lead us closer to the destination, which is a blue van. This aligns with the general direction we have been heading towards in previous steps.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.21s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a red bicycle in a navigable path, while views 2 and 3 (center and right) show walls. The left path appears to be a viable route forward. Comparing this with the history of exploration, it seems that moving left has consistently led to new areas and landmarks, suggesting it is a promising direction. Since the destination node features a blue van, and previous paths have led to various vehicles, moving left might bring me closer to the van. Therefore, the best valid action is to move left.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.97s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a clear path with a green dinosaur-like object in it, while view 3 (right) shows a wall. View 2 is also a wall. The left path (view 1) appears navigable and does not show any immediate obstacles. Comparing this to the exploration history, the agent has been moving through corridors and turning at intersections. The destination node, which contains a blue van, seems to be further ahead in the maze. Since the left path (view 1) is open and unobstructed, it is the most promising direction to continue exploring towards the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.07s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+
+- View 1 (left): A yellow table is visible, and the path appears to be open.
+- View 2 (front): A blue robot-like figure is directly in front of me, but there seems to be a navigable path beyond it.
+- View 3 (right): The path is blocked by a wall.
+
+Comparing this to the exploration history, I notice that the destination node (a blue van) was previously seen in the left direction (view 1). Given that the left path has been consistently navigable in past steps and aligns with the direction of the destination, moving left (action 1) seems to be the most logical choice. This action likely shortens the route to the destination compared to moving forward or right, where walls block the path.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.73s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a clear path with a red bicycle visible, indicating a navigable direction.
+- View 2 (center) is a wall, so this direction is impassable.
+- View 3 (right) shows a wall as well, making it an invalid path.
+
+Given the history of exploration, we have been moving through various paths and landmarks. The destination node features a blue van. Based on the history, the most recent paths have led us closer to potential intersections or decision points. Since view 1 appears to be the only viable path forward, it is the best choice to continue toward the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=12
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.42s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a clear path with a green dinosaur toy visible, suggesting it is navigable. Direction 2 (center) appears to be a wall, and direction 3 (right) also seems to be a wall. Given the history of exploration, the agent has been moving through corridors and avoiding walls. The destination node features a blue van, which was previously seen in the exploration experience. Since the left path (direction 1) is open and aligns with the general direction of the van's location in the maze, it is the most promising route to take.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.99s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a table, which appears to be a navigable path. View 2 (front) shows a blue robot-like figure, and view 3 (right) shows a red car. The left path (view 1) seems to lead away from the immediate landmarks and potentially towards an open area. Comparing this with the exploration history, it appears that moving left has been a consistent strategy in navigating through the maze. Given the goal is to reach the blue van at the destination, moving left (view 1) seems to offer a clearer path forward without immediate obstacles.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.40s
+[LLM raw]: THINK: In the current triple-perspective view, the left and right views (1 and 3) show navigable paths with visible landmarks, while the center view (2) appears to be a wall. The object in the right view (3) is a pink horse, which seems familiar from previous exploration steps. Given the history, the agent has been moving through corridors and encountering various objects, including the pink horse. The destination node features a blue van, which is not visible in the current view. However, based on the layout and the agent's previous path, moving left (1) seems to lead towards a more open area that might connect to the path leading to the blue van. Therefore, the best action is to move left (1).
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=16
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.24s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a clear path with a green dinosaur toy visible, indicating an open navigable route. View 2 (center) and view 3 (right) both show walls, suggesting these directions are blocked. Comparing this to the exploration history, it appears that moving left (view 1) aligns with previously taken paths that led toward the destination. Since the goal is to reach the blue van, and the left path seems consistent with prior successful navigation, choosing view 1 is the most logical choice.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Stop: node (3, 5) visited 4 times (>3). Failure.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: 0.111 | DIR_ACC: 0.556 | NeighborHit: 0 | GoalChose: 0 | StopReason: revisit_limit | Steps: 18
+
+--- Episode 10 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 6) -> Goal: (7, 10) | Shortest: 5 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(10, 6) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromSouth_WNE_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 15.07s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a blue narwhal-like object in a hallway, indicating a navigable path.
+- View 2 (front): Displays a yellow rubber duck, suggesting a direct path forward.
+- View 3 (right): Appears to be a wall, indicating an impassable direction.
+
+Comparing this to the exploration history, I notice that the yellow rubber duck is a recurring landmark. The destination node features a large teddy bear, which is not visible in the current view. However, the presence of the rubber duck suggests proximity to other landmarks and potential pathways.
+
+Given the options:
+- Moving left (View 1) would lead me back towards the blue narwhal, which might not be the most efficient route to the teddy bear.
+- Moving forward (View 2) aligns with the path that has been consistently navigable in previous steps and may lead me closer to the destination.
+
+Therefore, the best action to take is to move forward (View 2), as it is the most direct and likely path to reach the destination efficiently.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.10s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a blue narwhal-like object and an open path, while view 2 (front) shows a red and yellow rocket. View 3 (right) is blocked by a wall. Comparing this to the exploration history, it appears that I have moved forward from the previous position where the duck was visible. The destination node features a large teddy bear, which is not currently visible in any of the views. However, based on the exploration history, moving left (view 1) seems to be the most logical choice as it aligns with the path that previously led towards the destination. Moving left should bring me closer to the teddy bear.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromNorth_ESW_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.13s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, the front view (2) shows a small car and a path leading forward, and the right view (3) shows another wall. Based on the history of this trip, we have previously encountered various landmarks such as a duck, a narwhal, a rocket, and a teddy bear. The destination node is a large teddy bear, which was last seen in the left direction during the exploration experience. Given that the left direction (1) is now open and unobstructed, it is the most likely path to reach the destination quickly.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromWest_NES_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.12s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): A yellow rubber duck is visible, and the path appears navigable.
+- View 2 (center): The view is blocked by a wall.
+- View 3 (right): A blue van is visible, and the path appears navigable.
+
+Comparing this to the exploration history, I notice that the yellow rubber duck (seen in View 1) was previously encountered during earlier steps. This suggests that moving left (View 1) might lead me back toward areas I've already explored, potentially bringing me closer to the destination.
+
+The destination node features a large teddy bear, which was not directly seen in the current view but was part of the exploration history. Given that the left path (View 1) seems familiar and possibly connected to previously explored areas, it is likely to be the most efficient route to reach the destination.
+
+Therefore, the best valid action to take is **1 (left)**, as it aligns with the exploration history and is the most promising path to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 19.80s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a narwhal toy and an open path, while direction 2 (front) shows a rocket toy directly ahead. Direction 3 (right) is blocked by a wall. Based on the exploration history, I have previously seen the teddy bear (the destination object) in the leftmost path. Since the narwhal is visible in direction 1, it suggests that moving left might lead me closer to the teddy bear. Therefore, choosing direction 1 is the best option as it aligns with the path leading to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromNorth_ESW_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.22s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a wall, view 2 (front) shows a navigable path with a small car in the distance, and view 3 (right) shows another wall. Based on the history of exploration, it appears that moving forward (view 2) is the most logical choice as it aligns with the general direction towards the destination, which is a teddy bear located further ahead. The previous steps indicate a pattern of moving forward to reach the destination efficiently.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromNorth_ESW_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.49s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a blue van in a hallway, which appears to be a navigable path. View 2 is a wall, and view 3 (right) shows a beige rabbit in a hallway, also a navigable path. Comparing this to the exploration history, the left path (view 1) has been previously explored and leads towards the destination node, which features a teddy bear. The right path (view 3) seems less familiar and may lead to a different area. Given that the left path has been part of the known route and is likely to continue towards the destination, it is the better choice.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromWest_NES_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=9
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromSouth_WNE_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.60s
+[LLM raw]: THINK: In the current triple-perspective view, the left (1) and front (2) directions appear navigable, while the right (3) is a wall. The yellow duck is visible in the front view (2), which was also seen in the exploration experience of the previous trip. This suggests that moving forward (2) will likely lead to a familiar path toward the destination. The destination node features a teddy bear, which was not directly encountered in the history but was seen in a similar environment. Moving forward aligns with the path taken previously when approaching landmarks, suggesting it's the most efficient route.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=11
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 26.04s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, the front view (2) shows a clear path with a rocket in the distance, and the right view (3) also shows a wall. The history of exploration indicates that moving forward has been a consistent strategy to progress through the maze. Given that the destination node features a teddy bear, which was previously seen in the leftmost part of the maze during earlier steps, it is logical to continue moving forward to explore new paths while keeping the possibility of turning left later if needed. Moving forward (action 2) aligns with the established pattern of exploration and is the most direct way to approach the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromEast_SWN_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.99s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a navigable path with a yellow truck visible, indicating a clear direction forward.
+- View 2 (center) is a wall, so moving in this direction is invalid.
+- View 3 (right) also appears to be a wall.
+
+Given the history of exploration, I have been navigating through paths that lead me closer to various landmarks. The destination node features a teddy bear, which has not yet been directly encountered in the current path. However, based on the previous steps and the layout of the maze, moving left (action 1) seems to be the most promising direction to continue progressing towards the destination. This choice aligns with the pattern of movement observed in the history, where moving left often leads to new areas of the maze.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.09s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left): Shows a blue narwhal toy and an open path ahead, indicating a navigable direction.
+- View 2 (front): Displays a red car in front of a wall, suggesting this is a dead-end or blocked path.
+- View 3 (right): Shows a solid wall, indicating no passage.
+
+Given the goal to reach the teddy bear at the destination node, and comparing this with the exploration history, it appears that moving left (View 1) will lead to a continuation of the path that has been previously explored and is likely to bring me closer to the destination. The red car in the front view suggests a dead-end, so moving forward (View 2) would not be beneficial. Therefore, the best action is to move left (View 1).
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromWest_NES_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.04s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a rocking horse, which appears to be a navigable path. Direction 2 (front) is a clear path leading forward, and direction 3 (right) shows a small car in the distance, also indicating a navigable path. Comparing this to the exploration history, I notice that the rocking horse (seen in direction 1) was previously encountered, suggesting it might lead to a familiar or useful area. However, the small car in direction 3 seems closer to the destination node (the teddy bear), which is my goal. Given this, moving towards direction 3 (right) seems like the most direct route to shorten the distance to the destination.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromNorth_ESW_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.04s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a blue van in a corridor, which appears to be a navigable path. View 2 (center) is a wall, and view 3 (right) shows a rabbit toy, indicating another navigable path. Comparing this with the exploration history, the blue van in view 1 seems to be part of a previously explored route that leads towards the destination node, which features a teddy bear. The rabbit in view 3 might lead to a different area, but it doesn't seem to be directly aligned with the path leading to the teddy bear. Therefore, moving left (action 1) is the best choice as it continues along a path that has been explored before and is likely to lead closer to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromWest_NES_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=17
+[Auto-Move] Only one way: left. Skipping Agent.
+  -> Stop: node (10, 6) visited 4 times (>3). Failure.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: 0.137 | DIR_ACC: 0.500 | NeighborHit: 0 | GoalChose: 0 | StopReason: revisit_limit | Steps: 18
+
+--- Episode 11 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 8) -> Goal: (3, 3) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(10, 8) | facing=south (2) | arrival(virtual)=north (0)
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromNorth_ESW_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 13.80s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, indicating it is not a navigable path. The front view (2) shows a hallway leading to a helicopter and a van, which are landmarks from the exploration experience. The right view (3) shows a hallway leading to a rocking horse, another landmark from the exploration experience. Comparing this to the exploration history, the front view (2) aligns with a previously explored path that leads towards the destination. The right view (3) also shows a familiar landmark but seems to be a different branch of the maze. Given the goal to find a shortcut to the destination, moving forward (2) appears to be the most direct route based on the landmarks seen in the exploration history.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromNorth_ESW_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 13.99s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a wall, view 2 (front) shows a navigable path with a blue van in the distance, and view 3 (right) shows another wall. Based on the exploration history, I have previously seen the boat at the destination node, which is likely to be further ahead in the maze. Since the front path (view 2) appears to be the only viable option for progress, it is the best choice to continue moving forward toward the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromNorth_ESW_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromEast_SWN_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 15.90s
+[LLM raw]: THINK: In the current triple-perspective observation, view 2 (front) shows a clear path forward with no immediate obstacles, while view 3 (right) appears to lead into a corner that may not be directly toward the destination. View 1 (left) is blocked by a wall. The previous exploration experience indicates that moving forward (action 2) has been effective in progressing through the maze and getting closer to various landmarks. Given that the destination is a boat, which was previously seen in a similar orientation during earlier steps, continuing straight ahead (action 2) seems to be the most direct route to potentially reach the boat faster.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromEast_SWN_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromNorth_ESW_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.61s
+[LLM raw]: THINK: In the current triple-perspective observation, view 2 (front) shows a guitar, which appears to be a navigable path as it is not blocked by a wall. View 3 (right) shows a navigable path leading towards a bag and a bicycle, while view 1 (left) is a wall. Comparing this to the history of the trip, we can see that moving forward (view 2) aligns with the previous paths taken, suggesting continuity in navigation. The destination node features a boat, which is not visible in the current view but was seen in earlier exploration. Moving forward (view 2) seems to be the most logical step to continue progressing towards the destination, as it maintains the direction previously taken and avoids unnecessary detours.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromNorth_ESW_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 1) | triple_view=Node_001_X10_Y1_FromWest_NES_LFR.png | overview=Node_001_X10_Y1_Overview.png | phase=normal | step=7
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromEast_SWN_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromSouth_WNE_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.97s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a navigable path leading to a bicycle and a bag, suggesting it is a valid direction. View 2 (front) shows a rabbit toy directly in front of me, which appears to be a landmark but not necessarily leading towards the destination. View 3 (right) is blocked by a wall. Comparing this to the exploration history, I have previously moved through similar paths that led to the destination. Given that view 1 provides a clear path forward without obstacles, it is the most promising direction to continue exploring.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Reached NEIGHBOR of goal at (3, 2).
+  -> Nav Success. Neighbor_SPL: 0.500. Executing FINAL STEP...
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromEast_SWN_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=final | step=10
+[Auto-Move] Only one way: right. Skipping Agent.
+  -> Final step LANDED on GOAL. goalChose=1. Goal_SPL: 0.545
+  [Result] NeighborSPL: 0.500 | GoalSPL: 0.545 | DPS: 0.489 | DIR_ACC: 0.727 | NeighborHit: 1 | GoalChose: 1 | StopReason: goal_reached | Steps: 11
+
+--- Episode 12 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 8) -> Goal: (5, 1) | Shortest: 6 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(10, 8) | facing=south (2) | arrival(virtual)=north (0)
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromNorth_ESW_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 13.36s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, indicating it is not a navigable path. The front view (2) shows a clear path leading to a helicopter and a van, which are landmarks from the exploration history. The right view (3) shows a rocking horse, another landmark from the history. Comparing this to the destination node, which features a guitar, I need to determine the most efficient path to reach it. Given that the guitar is located in a different section of the maze, moving forward (2) seems to be the best option as it aligns with the path previously taken towards other landmarks, suggesting a continuation of the route that might lead closer to the guitar.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromNorth_ESW_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.40s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, indicating it is not a navigable path. The front view (2) shows a blue van in the distance, which appears to be a landmark from the exploration history. The right view (3) shows a narwhal-like object, which is also a landmark from the history. Comparing this to the exploration experience, the front view (2) aligns with a previously navigated path that led towards the destination. The right view (3) seems to lead away from the direction of the guitar, which is the target. Therefore, moving forward (2) is the best choice as it continues along the path that has been successful in reaching landmarks closer to the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromNorth_ESW_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromEast_SWN_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.45s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a wall, indicating it is impassable. Direction 2 (front) shows a clear path with a teddy bear visible ahead, suggesting it is navigable. Direction 3 (right) also shows a navigable path with a blue narwhal toy visible. Comparing this to the exploration history, I have previously moved through similar paths and landmarks, such as the narwhal and the teddy bear, which helped me navigate towards the destination. Given that the destination is a guitar, and based on the layout of the maze, moving forward (direction 2) seems to be the most direct route to continue progressing towards the guitar. Moving right (direction 3) might lead to a longer path or a dead end.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromEast_SWN_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: left. Skipping Agent.
+  -> Reached NEIGHBOR of goal at (5, 2).
+  -> Nav Success. Neighbor_SPL: 1.000. Executing FINAL STEP...
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromNorth_ESW_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=final | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.18s
+[LLM raw]: THINK: In the current triple-perspective observation, view 2 (front) shows a large object that appears to be the destination guitar. View 1 (left) and view 3 (right) both show walls, indicating these directions are blocked. Based on the history of this trip, we have previously seen the guitar in a similar position, suggesting that moving forward (view 2) will lead directly to the destination. Moving right (view 3) would take us away from the guitar, making it an inefficient choice.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+  -> Final step LANDED on GOAL. goalChose=1. Goal_SPL: 1.000
+  [Result] NeighborSPL: 1.000 | GoalSPL: 1.000 | DPS: 0.859 | DIR_ACC: 1.000 | NeighborHit: 1 | GoalChose: 1 | StopReason: goal_reached | Steps: 6
+
+--- Episode 13 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 3) -> Goal: (0, 7) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(7, 3) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromSouth_WNE_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 12.52s
+[LLM] Qwen request FAILED after 12.52s (attempt 1/4): Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+LLM error: Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+  -> Episode Aborted due to LLM error.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: 0.000 | DIR_ACC: 0.000 | NeighborHit: 0 | GoalChose: 0 | StopReason: llm_error | Steps: 0
+
+--- Episode 14 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 10) -> Goal: (7, 3) | Shortest: 5 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(7, 10) | facing=west (3) | arrival(virtual)=east (1)
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromEast_SWN_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=0
+[Auto-Move] Only one way: front. Skipping Agent.
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.08s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a path leading to a yellow car, which matches the destination object. View 2 (front) shows a pink blob-like object, which is not the target. View 3 (right) is a wall and thus impassable. Comparing this to the exploration history, the yellow car was previously seen in a similar position during Step 9, indicating that moving left (view 1) would likely lead directly to the destination. This direction appears to be the most efficient path based on prior experience.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromNorth_ESW_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 15.17s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left): Shows a wooden rocking horse, indicating a navigable path.
+- View 2 (front): Displays a yellow truck, which is the destination object. This suggests that moving forward will lead directly to the target.
+- View 3 (right): Appears to be a wall, indicating an impassable path.
+
+Comparing this to the exploration history, it seems we are approaching the destination from a different angle than before. The presence of the yellow truck in the front view confirms that we are on the correct path toward the goal. Moving forward (action 2) is the most direct route to reach the destination quickly, as it aligns with the location of the target object.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.31s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a narwhal-like object in a hallway, the front view (2) shows a red car on the floor, and the right view (3) is a wall. The red car matches the destination object seen in the overview image. Based on the history of this trip, we have already explored various paths and landmarks, including the yellow truck and other objects. The red car is now directly in front of us, indicating that we are very close to the destination. Moving forward (action 2) will likely lead us directly to the red car, which is our target.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 19.63s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a ship, which appears to be a navigable path.
+- View 2 (front) shows an empty path with no landmarks, suggesting it is also navigable.
+- View 3 (right) shows a wall, indicating it is impassable.
+
+Comparing this to the exploration history, we can see that the agent has previously moved through various paths and encountered different objects. The destination node features a yellow car, which was seen in the exploration history at Step 9. 
+
+Given the current view, moving forward (View 2) seems like the most direct path to continue exploring the maze and potentially reach the destination. Moving left (View 1) might lead to a different part of the maze, but it doesn't appear to be the most direct route to the yellow car. Moving right (View 3) is not an option as it is blocked by a wall.
+
+Therefore, the best action to take is to move forward (View 2).
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 19.29s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a red bicycle in a navigable path, while the right view (3) shows a wall. The middle view (2) is also a wall. Based on the exploration history, I have been moving through corridors and encountering various objects like a rocket, car, and dinosaur. The destination appears to be a yellow car, which was seen earlier in the exploration. Given the current position, moving left (1) seems to offer a clear path forward without encountering a wall, potentially leading me closer to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.14s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a clear path with a green dinosaur toy visible, indicating this is a navigable direction.
+- View 2 (center) and View 3 (right) appear to be walls, as they show no visible paths or landmarks.
+
+Comparing this to the exploration history, we can see that moving left (View 1) aligns with previously taken paths that led to new areas. The destination node features a yellow car, which has not yet been directly approached in the history. Moving left seems to offer a continuation of the path that has been productive so far.
+
+Given this reasoning, the best valid action to take is to move left (Action 1), as it is the only navigable direction and aligns with the strategy of exploring new areas that have not yet been fully traversed.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.35s
+[LLM raw]: THINK: In the current triple-perspective observation, I see the following:
+
+- View 1 (left): A yellow table is visible, which appears to be a navigable path.
+- View 2 (front): A blue robot-like figure is present, but it doesn't seem to be directly related to the destination.
+- View 3 (right): A red car is visible, which might be closer to the destination compared to other landmarks seen so far.
+
+Comparing this with the exploration history, the red car was previously seen in a different part of the maze. Given that the destination is a yellow car, and considering the layout of the maze, moving left (View 1) seems to offer a clearer path forward without unnecessary detours. The yellow table in View 1 might serve as a new landmark to help navigate towards the destination.
+
+Therefore, the best action to take is to move left (Action 1).
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.88s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a navigable path with a red bicycle visible, indicating a clear passage.
+- View 2 (center) appears to be a wall, as it is completely dark and lacks any visible landmarks or pathways.
+- View 3 (right) also shows a navigable path with a pink object visible in the distance.
+
+Comparing this to the history of exploration, the agent has been moving through various paths and landmarks. The destination node is a yellow car, which was previously seen in the history during Step 9. Given the current view, moving left (View 1) seems to be the most promising direction because it aligns with the general direction the agent has been taking towards the destination. Moving right (View 3) might lead to a different area that hasn't been explored yet and may not directly lead to the destination.
+
+Therefore, the best valid action to take from the current position is to move left (Action 1).
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=11
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.05s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a clear path with a green dinosaur toy visible, suggesting it is navigable. View 2 (center) and view 3 (right) appear to be walls, as they show no visible paths or landmarks. Comparing this to the exploration history, the left direction (view 1) aligns with previously navigated paths that led toward the destination. The destination node features a yellow car, which was not directly seen in the history but was encountered in earlier explorations. Given this context, moving left (action 1) seems most likely to continue progress toward the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.14s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a clear path with a yellow table visible in the distance. Direction 2 (front) is blocked by a wall, and direction 3 (right) also shows a wall. Based on the exploration history, the agent has been moving through corridors and avoiding dead ends. The destination appears to be a yellow car, which was previously seen in the background during earlier steps. Since direction 1 provides an open path and aligns with the general direction of the destination, it is the most promising choice.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.47s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a clear path with a red bicycle visible in the distance. View 2 (center) and view 3 (right) both show walls, indicating these directions are blocked. Comparing this to the exploration history, it appears that moving left (view 1) aligns with previously navigated paths that led toward the destination. The destination node features a yellow car, which is not visible in the current view but has been seen in previous steps when moving forward. Given this context, moving left (action 1) seems to be the most logical choice as it continues along a navigable path that has previously led to progress toward the goal.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=15
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.84s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a green dinosaur toy, which appears to be a navigable path. The middle view (2) is a wall, and the right view (3) shows a blue bag, also a navigable path. Comparing this to the exploration history, the left path (1) has not been taken yet and seems to lead away from the previous paths explored. Since the destination is a yellow car, and based on the history, it appears that moving left might provide a new route that could potentially lead to the destination more directly. Therefore, choosing action 1 (left) is the best option as it offers a new direction that hasn't been fully explored yet.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Stop: node (3, 5) visited 4 times (>3). Failure.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: 0.186 | DIR_ACC: 0.529 | NeighborHit: 0 | GoalChose: 0 | StopReason: revisit_limit | Steps: 17
+
+--- Episode 15 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 10) -> Goal: (10, 6) | Shortest: 5 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(7, 10) | facing=west (3) | arrival(virtual)=east (1)
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromEast_SWN_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=0
+[Auto-Move] Only one way: front. Skipping Agent.
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.02s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a clear path leading to a yellow car, which is a landmark seen in the exploration history. The front view (2) shows a pink object, which is not directly related to the destination. The right view (3) is blocked by a wall. Based on the exploration history, moving left (1) aligns with a previously navigated path that led to a significant landmark (the yellow car), suggesting it might be closer to the destination. Therefore, moving left (1) is the best choice as it likely shortens the route to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromNorth_ESW_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 15.60s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a rocking horse, which appears to be a landmark from the exploration history. The front view (2) shows a truck, another landmark seen earlier in the trip. The right view (3) is blocked by a wall. Comparing this to the exploration history, the truck (seen in the front view) was previously encountered when moving forward, suggesting that continuing straight ahead might lead closer to the destination. The helicopter, which is the target object, was seen in the left view during an earlier step, indicating that moving left could potentially lead to a shortcut. However, since the truck is directly in front and aligns with the path taken in the previous steps, moving forward seems more likely to continue progress toward the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.83s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a narwhal-like object in the distance, indicating a navigable path.
+- View 2 (front): Shows a red car directly in front of me, which appears to be a landmark.
+- View 3 (right): Appears to be a wall, indicating an impassable path.
+
+Comparing this to the exploration history, I notice that the red car is a familiar landmark from previous steps. The destination node includes a helicopter, which is not visible in the current view. However, the red car is closer to the helicopter than other landmarks seen so far.
+
+Given this, moving forward (action 2) seems to be the best choice as it aligns with the direction of the red car, which has been part of the route leading towards the destination. Moving left (action 1) might lead to a different path that hasn't been explored yet and may not be as direct.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.49s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a ship, the front view (2) shows an empty path with a small table in the distance, and the right view (3) shows a blue robot-like object. The left and front views appear to be navigable paths, while the right view is blocked by a wall. Comparing this to the exploration history, it seems that moving forward (action 2) would continue along a previously explored path that leads toward the destination. This path appears to be the most direct route based on the landmarks seen so far.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 19.71s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a red bicycle in a clear path, while direction 3 (right) shows a wall. Direction 2 is also a wall. Based on the exploration history, we have been moving through paths that lead to various landmarks, and the destination node appears to be further down a straight path. Since direction 1 provides an open path and aligns with the general direction of movement seen in previous steps, it is the most promising route to continue towards the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.41s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a green dinosaur toy, which appears to be a navigable path. View 2 is a wall, and view 3 (right) shows a blue bag, also indicating a navigable path. Comparing this to the exploration history, it seems that moving left (view 1) aligns with previously taken paths that led toward the destination. The destination node features an orange helicopter, which was not directly visible in the history but was seen in a similar direction as the left path. Therefore, moving left (view 1) is the best choice as it continues along a path that has been successful in previous steps and is likely to lead closer to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.57s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a yellow table in an open space, indicating a navigable path.
+- View 2 (front): Shows a blue robot-like object directly ahead, suggesting a navigable path.
+- View 3 (right): Shows a wall, indicating an impassable direction.
+
+Comparing this to the exploration history, I notice that the left path (View 1) has not been explored yet and seems promising for reaching the destination. The destination node features a helicopter, which is not visible in the current view but might be accessible via the left path based on the previous exploration patterns.
+
+Given this reasoning, moving left (Action 1) appears to be the best choice as it opens up a new area that could potentially lead to the destination more efficiently than continuing straight or turning right.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.44s
+[LLM raw]: THINK: In the current triple-perspective view, the leftmost view (1) shows a clear path with a red bicycle visible, indicating it is a navigable path. The middle view (2) and rightmost view (3) show walls, making them impassable. Comparing this to the history of exploration, I notice that moving left (1) aligns with previously successful paths that led to significant landmarks. Given the destination node features an orange helicopter, which was seen in earlier steps when moving forward, continuing left seems to be the most logical choice to progress toward the goal. This direction has consistently provided access to new areas without dead ends.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=11
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.33s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a green dinosaur toy, which appears to be a navigable path. The middle view (2) and right view (3) show walls, indicating these directions are blocked. Comparing this to the exploration history, I notice that moving left (1) aligns with previously taken paths that led me closer to the destination. The destination node features an orange helicopter, which is not visible in the current view but has been seen in previous steps when moving forward. Given this, moving left (1) seems to be the best option as it continues along a previously successful route toward the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.88s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left): Shows a wall and a yellow table in the distance, indicating a navigable path.
+- View 2 (front): Shows a wall with no visible landmarks, suggesting it is not a viable path.
+- View 3 (right): Shows a wall and a red car in the distance, indicating a navigable path.
+
+Comparing this to the exploration history, the red car seen in view 3 of the current observation matches the red car seen earlier in the history, which was located near the destination. This suggests that moving right (view 3) could lead closer to the destination.
+
+Given this reasoning, the best valid action to take is to move right (view 3), as it aligns with a previously encountered landmark and is likely to shorten the route to the destination.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=14
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.47s
+[LLM raw]: THINK: In the current triple-perspective observation, the view to the front (2) shows a clear path leading towards a rocket-like object, which appears to be a navigable path. The left view (1) and right view (3) both show walls, indicating these directions are blocked. Comparing this with the exploration history, the rocket-like object in the front view matches a landmark seen earlier, suggesting that moving forward will continue progress along a known path. Since the destination node features a helicopter, and the current path seems to lead through areas with various objects, moving forward is the most logical choice to potentially reach the destination more quickly.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.98s
+[LLM raw]: THINK: In the current triple-perspective view, the left and right views (1 and 3) show walls, indicating that movement in those directions is blocked. The middle view (2) shows a navigable path with a wooden archway in front of it. Based on the exploration history, this path appears to be part of a corridor that has been traversed before, leading towards various landmarks. The destination node features a helicopter, which was previously seen in the exploration experience. Given that the path ahead (view 2) aligns with the direction of the helicopter's location in the history, moving forward (action 2) is the most logical choice to continue progressing toward the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromSouth_WNE_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 34.30s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a clear path leading forward with a pink object visible in the distance.
+- View 2 (center) is blocked by a wall.
+- View 3 (right) shows a teddy bear and a wall to the right.
+
+Comparing this to the exploration history, it appears that moving left (View 1) aligns with previously navigated paths that led toward the destination. The pink object in the distance could be a landmark similar to those seen during earlier exploration, suggesting this path might lead closer to the target helicopter.
+
+Given this reasoning, moving left (Action 1) seems to be the best choice as it continues along a navigable path that has been successful in previous steps and is likely to bring us closer to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Max steps reached. Failure.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: -0.001 | DIR_ACC: 0.444 | NeighborHit: 0 | GoalChose: 0 | StopReason: max_steps | Steps: 18
+
+--- Episode 16 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 3) -> Goal: (0, 5) | Shortest: 6 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(10, 3) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromSouth_WNE_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 13.78s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a yellow car with a rabbit on top, which is a landmark seen in the exploration history. View 2 (front) shows a yellow rubber duck near a helicopter, another landmark from the history. View 3 (right) is a wall, indicating no path forward. Comparing this to the exploration history, the yellow car and rabbit are closer to the starting point, while the rubber duck and helicopter are further along the path. The destination node features a table and a bicycle, which are not visible in the current view. Given the landmarks and their positions in the history, moving left (view 1) seems to be the most logical choice as it aligns with the path that has been previously explored and is likely to lead towards the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromEast_SWN_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.72s
+[LLM raw]: THINK: In the current triple-perspective view, the leftmost and rightmost views (1 and 3) show walls, indicating that movement in those directions is blocked. The middle view (2) shows a clear path forward with a rabbit toy visible ahead. Comparing this to the exploration history, it appears I am moving through a maze-like environment with various objects placed at different nodes. The destination node features a yellow table with a red bicycle underneath it. Based on the current view, moving forward (action 2) seems to be the most logical choice as it aligns with the path I have been following in previous steps and is likely to lead me closer to the destination. Moving right (action 3) would take me away from the apparent main path and might not be as efficient.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromEast_SWN_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromNorth_ESW_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.78s
+[LLM raw]: THINK: In the current triple-perspective observation, view 2 (front) shows a guitar, which appears to be a navigable path. View 1 (left) and view 3 (right) both show walls, indicating these directions are blocked. Comparing this to the history of exploration, it seems I have been moving through corridors with various objects like cars, helicopters, and animals. The destination node features a yellow table with a red bicycle in the background. Since the current view does not show any direct path to the destination, but view 2 is the only navigable path, it is logical to proceed forward to continue exploring potential shortcuts.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromNorth_ESW_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 1) | triple_view=Node_001_X10_Y1_FromWest_NES_LFR.png | overview=Node_001_X10_Y1_Overview.png | phase=normal | step=5
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromEast_SWN_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromSouth_WNE_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.66s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a pathway leading to a blue and white bag, which appears to be a navigable path.
+- View 2 (front) shows a rabbit toy directly in front of me, which seems to be a landmark but not necessarily leading toward the destination.
+- View 3 (right) is blocked by a wall.
+
+Given the history of exploration, I have previously seen the red bicycle near the destination. The left path (View 1) seems promising as it might lead me closer to the bicycle or another landmark that could guide me to the destination. Moving forward (View 2) with the rabbit in front doesn't seem to offer a clear shortcut to the destination based on past experiences.
+
+Therefore, the best valid action to take is to move left (Action 1), as it appears to be the most promising path based on the landmarks observed in previous steps and the goal of reaching the destination quickly.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromEast_SWN_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromSouth_WNE_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.93s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a clear path leading to a red bicycle, which is visible and navigable.
+- View 2 (front) shows a green dinosaur toy directly in front of me, indicating a navigable path.
+- View 3 (right) appears to be a wall, as it is dark and lacks any visible landmarks.
+
+Comparing this to the exploration history, I notice that the red bicycle seen in view 1 was also present in previous steps, suggesting it might be a significant landmark. The destination node features a yellow table with a red bicycle in the background, which aligns with the object in view 1. 
+
+Given this, moving forward (view 2) would lead me past the green dinosaur, but moving left (view 1) seems more promising as it aligns with the destination's key feature—the red bicycle. Therefore, the best action to take is to move left (view 1).
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Reached NEIGHBOR of goal at (0, 3).
+  -> Nav Success. Neighbor_SPL: 0.500. Executing FINAL STEP...
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromEast_SWN_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=final | step=10
+[Auto-Move] Only one way: right. Skipping Agent.
+  -> Final step LANDED on GOAL. goalChose=1. Goal_SPL: 0.545
+  [Result] NeighborSPL: 0.500 | GoalSPL: 0.545 | DPS: 0.475 | DIR_ACC: 0.727 | NeighborHit: 1 | GoalChose: 1 | StopReason: goal_reached | Steps: 11
+
+--- Episode 17 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 8) -> Goal: (3, 3) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(10, 8) | facing=south (2) | arrival(virtual)=north (0)
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromNorth_ESW_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 13.25s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, the front view (2) shows a path leading to a helicopter and a van, and the right view (3) shows a path leading to a rocking horse. Based on the exploration history, the destination is a boat, which was previously seen in the rightmost part of the maze. The right view (3) appears to be the most promising direction as it aligns with the path that has been leading towards the boat in previous steps. Moving right (action 3) is likely to bring me closer to the boat compared to moving forward (action 2), which seems to lead away from the boat's location.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.81s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a narwhal-like object and appears to be a navigable path. The front view (2) shows a rocket, which is also on a navigable path. The right view (3) is blocked by a wall. Comparing this to the exploration history, I notice that the rocket in the front view (2) was previously seen in a similar position during earlier steps, suggesting it might be part of a consistent path. However, the left view (1) has not been explored yet and could potentially lead to a new shortcut. Given the goal is to find a shortcut to the destination (the boat), moving left (1) seems promising as it may reveal an unexplored route that could bypass the current path.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromNorth_ESW_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.14s
+[LLM raw]: THINK: In the current triple-perspective observation, I see the following:
+
+- View 1 (left): A wall is visible, indicating no path in this direction.
+- View 2 (front): A small yellow car is visible, suggesting a navigable path ahead.
+- View 3 (right): A large truck and a dinosaur toy are visible, indicating a navigable path to the right.
+
+Comparing this to the exploration history, I notice that the truck and dinosaur were previously seen in the same general area, suggesting that moving right might lead me closer to the destination. The boat, which is the target object, was last seen in a similar position to where the truck and dinosaur are now, implying that moving right could be a shortcut to the destination.
+
+Given this reasoning, the best action to take is to move right (action 3), as it appears to be the most direct path towards the boat.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromEast_SWN_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.51s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a red car and appears to be a navigable path. View 2 is a wall, and view 3 (right) shows a rocket and also appears to be a navigable path. Comparing this to the history of exploration, it seems that moving left (view 1) aligns with previously taken paths that led toward the destination. The red car in view 1 might be a landmark that helps confirm the correct direction. Since the goal is to reach the boat (destination), moving left seems to be the most logical choice as it continues along a path that has been explored before and is likely to lead closer to the boat.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+  -> Reached NEIGHBOR of goal at (3, 5).
+  -> Nav Success. Neighbor_SPL: 1.000. Executing FINAL STEP...
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=final | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.98s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a wall and part of the boat, which is the destination.
+- View 2 (front) shows a wall and a small table, indicating a dead end or a side path.
+- View 3 (right) shows a wall and a blue robot-like figure.
+
+Given the history of exploration, we have previously seen the boat at various angles, and it appears to be the target. The boat is visible in view 1, suggesting that moving left (action 1) will bring us closer to the destination. Moving forward (action 2) or right (action 3) would likely lead to less relevant areas or dead ends based on the previous exploration.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Final step LANDED on GOAL. goalChose=1. Goal_SPL: 1.000
+  [Result] NeighborSPL: 1.000 | GoalSPL: 1.000 | DPS: 0.822 | DIR_ACC: 1.000 | NeighborHit: 1 | GoalChose: 1 | StopReason: goal_reached | Steps: 6
+
+--- Episode 18 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 10) -> Goal: (7, 3) | Shortest: 5 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(7, 10) | facing=west (3) | arrival(virtual)=east (1)
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromEast_SWN_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=0
+[Auto-Move] Only one way: front. Skipping Agent.
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.04s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a navigable path leading to a yellow car, which matches an object seen in the destination overview image.
+- View 2 (front) shows a pink object that appears to be a wall or obstacle blocking the direct path forward.
+- View 3 (right) is a wall and not navigable.
+
+Given the goal of reaching the yellow car at the destination, moving left (action 1) seems to be the most promising direction. This aligns with the exploration experience where the yellow car was previously observed, suggesting it is a key landmark on the route to the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromNorth_ESW_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 15.25s
+[LLM raw]: THINK: In the current triple-perspective view, the left (1) and front (2) directions appear to be navigable paths, while the right (3) is a wall. The truck, which is a landmark seen in the exploration history, is visible in the front (2) direction. This suggests that moving forward will likely lead me closer to the destination, as the truck was previously observed near the target car. Moving left (1) might also lead to the destination, but it seems less direct compared to moving forward. Therefore, the best action is to move forward (2).
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.89s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a wall, indicating no navigable path in that direction.
+- View 2 (front) shows a red car, which is the destination object. This suggests that moving forward will lead directly to the target.
+- View 3 (right) also shows a wall, indicating no navigable path in that direction.
+
+Comparing this to the exploration history, we can see that the red car was previously observed in a similar position, suggesting that moving forward from the current location will continue progress toward the destination. Since the red car is visible in the front view and matches the destination node, moving forward (action 2) is the most direct and efficient choice to reach the target.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.67s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a ship, view 2 (front) shows an empty path with a table, and view 3 (right) shows a blue robot. The left and front views appear navigable, while the right view is blocked by a wall. Comparing this to the exploration history, it seems that moving forward (view 2) aligns with the previous paths taken towards the destination. Since the goal is to reach the yellow car, and the front path appears clear and consistent with prior successful navigation, moving forward is the most logical choice.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 19.70s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a red bicycle in a navigable path, while the right view (3) shows a wall. The middle view (2) is also a wall. Based on the history of this trip, I have been moving through corridors and encountering various objects like cars, trucks, and animals. The destination node is a yellow car, which was previously seen in the left corridor during the exploration experience. Given that the left path appears navigable and aligns with the direction where the yellow car was last observed, moving left (action 1) seems to be the most logical choice to continue toward the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.86s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a clear path with a green dinosaur toy visible, suggesting it is navigable. Direction 3 (right) appears to be blocked by a wall, as indicated by the lack of visibility beyond that angle. Direction 2 (center) also seems to be a wall or an impassable area. Comparing this to the exploration history, I have not yet seen the yellow car (destination), but the left path has consistently led to new areas and landmarks. Therefore, moving left (action 1) is the best choice as it offers a navigable path and aligns with previous successful exploration directions.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 25.09s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a table, the front view (2) shows a blue humanoid figure, and the right view (3) shows a red car. Comparing this to the exploration history, I notice that the red car was previously seen in the rightmost part of the maze during Step 4. Since the destination node is a yellow car, and the red car appears to be closer to the center of the maze than the yellow car, moving towards the red car might help me reorient myself within the maze.
+
+Given the layout of the maze and the objects seen so far, moving forward (action 2) seems like the best choice. This direction has not been explored yet in the current trip and could potentially lead to a new path or a shortcut towards the yellow car. Additionally, since the red car was previously seen in the rightmost part of the maze, moving forward might bring me closer to that area, which could be beneficial for finding the yellow car.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromSouth_WNE_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=10
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromEast_SWN_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 25.32s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a wall, the front view (2) shows a brown horse toy, and the right view (3) shows a pink piggy bank. Based on the history of exploration, the agent has been navigating through various paths and landmarks, including cars, trucks, and other toys. The destination node is a yellow car, which was previously seen in the left path during earlier steps. Given that the front view (2) leads to a dead end with the horse toy, and the right view (3) leads to a different direction with the piggy bank, the best action is to move forward (2) to continue exploring the path that might lead to the yellow car.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromEast_SWN_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=12
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromNorth_ESW_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 25.26s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a green dinosaur toy in a hallway, the front view (2) shows a red bicycle, and the right view (3) is a wall. Based on the exploration history, I have previously seen the yellow car at the destination node. The left view (1) appears to lead further into the maze, while the front view (2) leads to a bicycle, which does not seem relevant to reaching the yellow car. Therefore, moving left (1) seems like the best option as it aligns with the path that has been leading me closer to the destination in previous steps.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromWest_NES_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 26.67s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a blue robot-like object and appears to be an open path. View 2 (front) shows a red car, which is the destination object, indicating that moving forward will lead directly to the goal. View 3 (right) shows a wall, making it an invalid path. Comparing this to the exploration history, the red car has been seen before in previous steps, confirming its presence as the target. Moving forward (action 2) is the most direct route to reach the destination quickly.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=15
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.73s
+[LLM raw]: THINK: In the current triple-perspective view, the left and right views (1 and 3) show walls, indicating that movement in those directions is blocked. The middle view (2) shows a clear path forward with a visible object (a rocket) ahead. Comparing this to the exploration history, I notice that moving forward (action 2) aligns with previously successful paths that led to landmarks closer to the destination. Since the goal is to reach the yellow car, and the current path appears to be leading toward it based on prior exploration, moving forward (action 2) is the most logical choice.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 33.55s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, indicating it is not a navigable path. The middle view (2) shows a clear path forward with no immediate obstacles, and the right view (3) also shows a navigable path but with a rocking horse in the distance. Comparing this to the exploration history, moving forward (2) aligns with previously successful paths that led to significant landmarks. Since the destination is a yellow car, and previous explorations suggest that moving straight ahead often leads to key areas, choosing action 2 (front) is the most logical choice to continue progressing toward the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+  -> Max steps reached. Failure.
+  [Result] NeighborSPL: 0.000 | GoalSPL: 0.000 | DPS: 0.016 | DIR_ACC: 0.444 | NeighborHit: 0 | GoalChose: 0 | StopReason: max_steps | Steps: 18
+
+--- Episode 19 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 6) -> Goal: (0, 3) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(10, 6) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromSouth_WNE_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.31s
+[LLM raw]: THINK: In the current triple-perspective observation, I see the following:
+- View 1 (left): A blue narwhal is visible, indicating a navigable path.
+- View 2 (front): A yellow rubber duck is visible, also indicating a navigable path.
+- View 3 (right): This appears to be a wall, as no object or path is visible.
+
+Comparing this to the exploration history, I notice that the yellow rubber duck in View 2 is a familiar landmark from previous steps. The destination node features a red bicycle, which is not currently visible. However, based on the layout and the presence of the rubber duck, it seems likely that continuing forward (View 2) will lead me closer to the destination.
+
+Given that moving forward (Action 2) aligns with the known path and avoids unnecessary detours, this is the best choice to reach the destination efficiently.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.30s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a blue narwhal and a yellow car, the front view (2) shows a rocket, and the right view (3) is a wall. Based on the exploration history, I have been moving through the maze and have encountered various landmarks such as a duck, a dinosaur, and a boat. The destination node features a red bicycle, which is not visible in the current view. However, the left view (1) seems to lead towards a more open area with potential pathways, while the front view (2) appears to be a dead end or a wall. Given this, moving left (1) is likely to provide a clearer path towards the destination by avoiding unnecessary turns or dead ends.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromNorth_ESW_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.52s
+[LLM raw]: THINK: In the current triple-perspective observation, I see that view 1 (left) shows a wall, view 2 (front) shows a navigable path with a small yellow car in the distance, and view 3 (right) shows another wall. Based on the exploration history, I have been moving through the maze and have encountered various landmarks such as a blue whale, a yellow duck, and a red bicycle. The destination node is a red bicycle, which is visible in the far left view (view 1). Since the red bicycle is located to the left of my current position, the best action to take is to move left (action 1) to head directly towards the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromWest_NES_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.97s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a yellow rubber duck, which is a landmark I have seen before in the exploration history. View 2 is a wall, and view 3 (right) shows a blue van. Based on the exploration history, I recall that the blue van was located near the center of the maze, and the yellow rubber duck was closer to the left side. Since the destination appears to be further ahead and likely requires moving forward or turning right, the best action is to move right (action 3). This direction aligns with the path I previously took towards the center of the maze, where the blue van was located, suggesting it might lead me closer to the destination.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromNorth_ESW_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromEast_SWN_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.26s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a wall, indicating it is not a navigable path. The front view (2) shows a rabbit, which appears to be a landmark in the maze. The right view (3) shows a narwhal, another landmark. Based on the history of this trip, I have previously encountered the narwhal and other landmarks like the rocket and dinosaur, which helped me navigate towards the destination. The rabbit in the front view (2) seems to be closer to the path that leads to the destination, as it aligns with the direction I have been taking in previous steps. Therefore, moving forward (2) is the best choice to continue progressing towards the destination.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromEast_SWN_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromNorth_ESW_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.76s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) and view 3 (right) appear to be walls, while view 2 (front) shows a clear path with a guitar in the center. Based on the history of this trip, I have been moving through various paths and landmarks, including a blue van, a yellow duck, and a red bicycle. The destination node is a red bicycle, which I have not yet seen directly. However, from the current position, moving forward (view 2) seems to align with the general direction I have been taking in previous steps, suggesting it might lead me closer to the destination. Moving right (view 3) appears to lead into a wall, making it an invalid option. Therefore, the best action is to move forward (view 2).
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromNorth_ESW_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=9
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 1) | triple_view=Node_001_X10_Y1_FromWest_NES_LFR.png | overview=Node_001_X10_Y1_Overview.png | phase=normal | step=10
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromEast_SWN_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=11
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromSouth_WNE_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 25.81s
+[LLM raw]: THINK: In the current triple-perspective view, the left view (1) shows a pathway leading to a red bicycle, which matches the destination object shown in the overview image. The front view (2) shows a rabbit, and the right view (3) is blocked by a wall. Given that the goal is to reach the red bicycle, moving left (action 1) would be the most direct path towards the destination. This aligns with the exploration experience where the bicycle was previously seen in a similar position, indicating it is the target.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromEast_SWN_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=13
+[Auto-Move] Only one way: right. Skipping Agent.
+  -> Reached NEIGHBOR of goal at (3, 3).
+  -> Nav Success. Neighbor_SPL: 0.357. Executing FINAL STEP...
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromSouth_WNE_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=final | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.55s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a clear path leading to a red bicycle, which matches the destination object in the overview image.
+- View 2 (front): Shows a green dinosaur toy, which is not relevant to the destination.
+- View 3 (right): Appears to be a wall with no visible path or landmark.
+
+Comparing this to the exploration history, I notice that the red bicycle was previously seen in a similar position during earlier steps. This suggests that moving left (View 1) will likely lead me directly to the destination.
+
+Given this reasoning, the best valid action to take is to move left (Action 1), as it aligns with the goal of reaching the red bicycle quickly and efficiently.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Final step LANDED on GOAL. goalChose=1. Goal_SPL: 0.400
+  [Result] NeighborSPL: 0.357 | GoalSPL: 0.400 | DPS: 0.339 | DIR_ACC: 0.667 | NeighborHit: 1 | GoalChose: 1 | StopReason: goal_reached | Steps: 15
+
+--- Episode 20 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 3) -> Goal: (5, 10) | Shortest: 5 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(10, 3) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromSouth_WNE_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 13.49s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a yellow car with a rabbit on top, which is a landmark seen in the exploration history. View 2 (front) shows a yellow duck and an orange helicopter, both of which are also landmarks from the exploration history. View 3 (right) is a wall, indicating no path forward. Comparing this to the exploration history, it appears that moving left (view 1) would lead to a familiar path that has been explored before, potentially leading closer to the destination. The destination node features a pink object, which is not visible in the current view, but moving left seems to be the most logical choice based on the previously explored paths.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromEast_SWN_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 14.91s
+[LLM raw]: THINK: In the current triple-perspective observation:
+- View 1 (left) shows a wall, indicating no path in that direction.
+- View 2 (front) shows a clear path with a rabbit toy visible ahead, suggesting this is a navigable route.
+- View 3 (right) shows another wall, indicating no path in that direction.
+
+Comparing this to the history of the trip, the agent has been moving through various paths and landmarks. The destination node features a pink snail-like object. Based on the current view, moving forward (action 2) seems to be the most direct path towards exploring new areas and potentially reaching the destination more quickly. Moving right (action 3) would lead to a wall, which is not helpful.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromEast_SWN_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromNorth_ESW_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.03s
+[LLM raw]: THINK: In the current triple-perspective view, direction 1 (left) shows a wall, indicating it is not a navigable path. Direction 2 (front) reveals a guitar, which appears to be a landmark in the maze. Direction 3 (right) shows another wall. Based on the exploration history, I have previously seen the destination (a pink object) located further down a path that was accessible from the right side of the maze. Since direction 3 leads to a navigable path and aligns with the historical route toward the destination, it is the best choice.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromEast_SWN_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromSouth_WNE_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.62s
+[LLM raw]: THINK: In the current triple-perspective observation, the left view (1) shows a red bicycle, the front view (2) shows a green dinosaur, and the right view (3) is a wall. Based on the exploration experience, I have previously seen the green dinosaur in a similar position, indicating that moving forward (action 2) will likely lead me closer to the destination. The destination node features a pink object, which is not visible yet, but moving forward aligns with the path I have taken before, suggesting it will eventually lead me there.
+
+ACTION: 2
+[LLM mapped]: num=2 -> rel=front
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.62s
+[LLM raw]: THINK: In the current triple-perspective view, I observe the following:
+- View 1 (left): Shows a table in an open space, indicating a navigable path.
+- View 2 (front): Shows a blue and white robot-like object, which appears to be a landmark but not directly related to the destination.
+- View 3 (right): Shows a red car in an open space, also indicating a navigable path.
+
+Comparing this to the exploration history, I notice that moving forward (View 2) has consistently led me closer to various landmarks. However, since the destination is a pink snail-like object located further down the maze, and given that View 1 (left) shows a clear path without any immediate obstacles or conflicting landmarks, it seems like moving left would be the most direct route to continue progressing toward the destination.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.71s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a red bicycle in a hallway, which appears to be a navigable path. View 2 is a wall, and view 3 (right) shows a pink object that matches the destination node's description. Given this, moving right (action 3) seems to be the most direct path toward the destination, as it aligns with the direction of the target object. The previous exploration experience indicates that moving right often leads to significant progress toward the goal.
+
+ACTION: 3
+[LLM mapped]: num=3 -> rel=right
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromSouth_WNE_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromWest_NES_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.27s
+[LLM raw]: THINK: In the current triple-perspective observation, view 1 (left) shows a pink object that matches the destination node's largest and most complete object. View 2 (front) shows a blue robot-like figure, which is not the target. View 3 (right) is a wall, indicating an impassable path. Comparing this to the exploration history, it appears that moving left (view 1) will lead directly toward the destination. This direction aligns with the goal of reaching the pink object efficiently.
+
+ACTION: 1
+[LLM mapped]: num=1 -> rel=left
+  -> Reached NEIGHBOR of goal at (1, 10).
+  -> Nav Success. Neighbor_SPL: 0.400. Executing FINAL STEP...
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromSouth_WNE_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=final | step=10
+[Auto-Move] Only one way: right. Skipping Agent.
+  -> Final step LANDED on GOAL. goalChose=1. Goal_SPL: 0.455
+  [Result] NeighborSPL: 0.400 | GoalSPL: 0.455 | DPS: 0.416 | DIR_ACC: 0.727 | NeighborHit: 1 | GoalChose: 1 | StopReason: goal_reached | Steps: 11
+
+[Maze_11x11_D2_T10_J10+2] SUMMARY (mode=llm):
+  NeighborSPL: 0.324, GoalSPL: 0.321
+  DPS: 0.311, DIR_ACC: 0.604
+  NeighborHits: 10/20, GoalHits: 9/20
+  Errors: 2
+Staged results saved to: D:/Nav_images/results_NUM_qwen-vl-plus_COT/maze_result_qwen-vl-plus_llm_NUM_vector_staged_Maze_11x11_D2_T10_J10+2.json
+
+========== Maze: Maze_11x11_D2_T9_J10+1 ==========
+[Maze_11x11_D2_T9_J10+1] Nodes: 22, Target Episodes: 44
+
+========== Maze: Maze_11x11_D6_T8_J8+0 ==========
+[Maze_11x11_D6_T8_J8+0] Nodes: 22, Target Episodes: 44
+
+========== Maze: Maze_5x5_D3_T2_J1+0 ==========
+[Maze_5x5_D3_T2_J1+0] Nodes: 6, Target Episodes: 12
+
+========== Maze: Maze_5x5_D4_T3_J2+0 ==========
+[Maze_5x5_D4_T3_J2+0] Nodes: 9, Target Episodes: 18
+
+========== Maze: Maze_7x7_D0_T7_J4+1 ==========
+[Maze_7x7_D0_T7_J4+1] Nodes: 12, Target Episodes: 24
+
+========== Maze: Maze_7x7_D2_T4_J2+1 ==========
+[Maze_7x7_D2_T4_J2+1] Nodes: 9, Target Episodes: 18
+
+========== Maze: Maze_7x7_D2_T5_J4+1 ==========
+[Maze_7x7_D2_T5_J4+1] Nodes: 12, Target Episodes: 24
+
+========== Maze: Maze_9x9_D1_T7_J9+1 ==========
+[Maze_9x9_D1_T7_J9+1] Nodes: 18, Target Episodes: 36
+
+========== Maze: Maze_9x9_D3_T3_J7+1 ==========
+[Maze_9x9_D3_T3_J7+1] Nodes: 14, Target Episodes: 28
+
+========== Maze: Maze_9x9_D5_T4_J7+1 ==========
+[Maze_9x9_D5_T4_J7+1] Nodes: 17, Target Episodes: 34
+
+================ GLOBAL RESULTS (qwen-vl-plus) ================
+AgentMode: llm
+
+[GLOBAL | OVERALL (includes errors)]
+Total Episodes : 20
+Neighbor SPL   : 0.3236
+Goal SPL       : 0.3206
+DPS            : 0.3107
+DIR_ACC        : 0.6045
+Neighbor Hits  : 10
+Goal Hits      : 9
+Errors         : 2
+
+[GLOBAL | VALID-ONLY (error-free episodes)]
+Total Episodes : 18
+Neighbor SPL   : 0.3595
+Goal SPL       : 0.3562
+DPS            : 0.3453
+DIR_ACC        : 0.6716
+Neighbor Hits  : 10
+Goal Hits      : 9
+Errors         : 0
+All results saved to: D:/Nav_images/results_NUM_qwen-vl-plus_COT/maze_result_qwen-vl-plus_llm_NUM_vector.json

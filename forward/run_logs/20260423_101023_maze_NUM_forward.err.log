@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\HaoXingjia\LLM_SC\py_Maze_cursor\forward-qwen_vaild\maze_NUM_forward.py", line 485, in <module>
+    main()
+  File "D:\HaoXingjia\LLM_SC\py_Maze_cursor\forward-qwen_vaild\maze_NUM_forward.py", line 394, in main
+    print(f"\U0001f680 Starting Navigation Experiments. Provider: {core.API_PROVIDER}, Model: {core.MODEL_NAME}, AgentMode: {AGENT_MODE}")
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f680' in position 0: illegal multibyte sequence

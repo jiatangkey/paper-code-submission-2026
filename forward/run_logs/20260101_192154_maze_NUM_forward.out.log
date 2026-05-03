@@ -1,0 +1,1140 @@
+🚀 Starting Navigation Experiments. Provider: qwen_dashscope, Model: qwen-vl-plus, AgentMode: llm
+🧾 Error log file: D:/Nav_images/results_NUM-forward_qwen-vl-plus\error_logs\errors_qwen-vl-plus_llm_20260101_192155.jsonl
+
+========== Maze: Maze_11x11_D2_T10_J10+2 ==========
+[Maze_11x11_D2_T10_J10+2] Nodes: 24, Target Episodes: 48
+[Maze_11x11_D2_T10_J10+2] Loaded precomputed episode pairs: 24
+
+--- Episode 1 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 8) -> Goal: (3, 2) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(7, 8) | facing=east (1) | arrival(virtual)=west (3)
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromWest_NES_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.78s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromWest_NES_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromNorth_ESW_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.98s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromNorth_ESW_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=3
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromEast_SWN_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.36s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromEast_SWN_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromNorth_ESW_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.50s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromNorth_ESW_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 1) | triple_view=Node_001_X10_Y1_FromWest_NES_LFR.png | overview=Node_001_X10_Y1_Overview.png | phase=normal | step=8
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromEast_SWN_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=9
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromSouth_WNE_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 36.49s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+  [Result] Success: True | SR: 1 | PFS: 0.000 | StopReason: goal_reached | Steps: 11
+
+--- Episode 2 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 10) -> Goal: (0, 5) | Shortest: 8 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(7, 10) | facing=west (3) | arrival(virtual)=east (1)
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromEast_SWN_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=0
+[Auto-Move] Only one way: front. Skipping Agent.
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.65s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromEast_SWN_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromNorth_ESW_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.08s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromWest_NES_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.39s
+[LLM raw]: 3
+[LLM mapped]: '3' -> rel=right
+  [Result] Success: True | SR: 1 | PFS: 0.833 | StopReason: goal_reached | Steps: 6
+
+--- Episode 3 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 3) -> Goal: (3, 7) | Shortest: 7 | Longest_steps: 20 | Max_steps: 20
+[Init] Start pos=(5, 3) | facing=south (2) | arrival(virtual)=north (0)
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromNorth_ESW_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.95s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromWest_NES_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.10s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromSouth_WNE_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.78s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromEast_SWN_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 26.62s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.13s
+[LLM raw]: 3
+[LLM mapped]: '3' -> rel=right
+  [Result] Success: True | SR: 1 | PFS: 0.167 | StopReason: goal_reached | Steps: 6
+
+--- Episode 4 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 5) -> Goal: (5, 8) | Shortest: 6 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(5, 5) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromSouth_WNE_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.89s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.74s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+  [Result] Success: True | SR: 1 | PFS: 0.500 | StopReason: goal_reached | Steps: 2
+
+--- Episode 5 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (10, 6) -> Goal: (3, 7) | Shortest: 7 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(10, 6) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromSouth_WNE_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.52s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.53s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromEast_SWN_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.04s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.19s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromWest_NES_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.76s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromSouth_WNE_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.97s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromEast_SWN_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.58s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.51s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromWest_NES_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 37.56s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromSouth_WNE_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 35.59s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromEast_SWN_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 43.24s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 42.88s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=13
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 49.52s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 51.81s
+[LLM raw]: 3
+[LLM mapped]: '3' -> rel=right
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromSouth_WNE_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=16
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromWest_NES_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 52.52s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+  [Result] Success: True | SR: 1 | PFS: 0.222 | StopReason: goal_reached | Steps: 18
+
+--- Episode 6 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 5) -> Goal: (3, 2) | Shortest: 8 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(5, 5) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromSouth_WNE_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.32s
+[LLM] Qwen request FAILED after 20.32s (attempt 1/4): Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+LLM error: Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+  -> Episode Aborted due to llm_error.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: llm_error | Steps: 0
+
+--- Episode 7 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 3) -> Goal: (5, 10) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(7, 3) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromSouth_WNE_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.08s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromEast_SWN_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromNorth_ESW_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.26s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromNorth_ESW_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=3
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 1) | triple_view=Node_001_X10_Y1_FromWest_NES_LFR.png | overview=Node_001_X10_Y1_Overview.png | phase=normal | step=4
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromEast_SWN_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromSouth_WNE_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.51s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromSouth_WNE_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromWest_NES_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 33.17s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromWest_NES_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=9
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromSouth_WNE_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 38.22s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=11
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 37.42s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromEast_SWN_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 42.81s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 44.21s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromWest_NES_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 48.79s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromSouth_WNE_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 46.24s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+  -> Max steps reached. Failure.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: max_steps | Steps: 17
+
+--- Episode 8 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (1, 7) -> Goal: (7, 8) | Shortest: 6 | Longest_steps: 17 | Max_steps: 17
+[Init] Start pos=(1, 7) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromSouth_WNE_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 19.07s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromEast_SWN_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromNorth_ESW_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.52s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromWest_NES_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 25.85s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromSouth_WNE_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromEast_SWN_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.42s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromEast_SWN_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromNorth_ESW_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.62s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromWest_NES_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.67s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromSouth_WNE_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=9
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromEast_SWN_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 33.64s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromEast_SWN_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=11
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromNorth_ESW_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 46.56s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromWest_NES_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 36.94s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromSouth_WNE_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=14
+[Auto-Move] Only one way: left. Skipping Agent.
+  -> Stop: node (1, 7) visited 4 times (>3). Failure.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: revisit_limit | Steps: 15
+
+--- Episode 9 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 6) -> Goal: (7, 3) | Shortest: 7 | Longest_steps: 17 | Max_steps: 17
+[Init] Start pos=(7, 6) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromSouth_WNE_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.88s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromEast_SWN_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.03s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 19.82s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromEast_SWN_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.22s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromNorth_ESW_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromWest_NES_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.52s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.13s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromSouth_WNE_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromEast_SWN_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 33.28s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromEast_SWN_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=10
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromNorth_ESW_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 37.97s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromWest_NES_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 37.79s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=13
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 41.26s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 41.08s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+  -> Max steps reached. Failure.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: max_steps | Steps: 16
+
+--- Episode 10 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (3, 2) -> Goal: (10, 6) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(3, 2) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromSouth_WNE_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.09s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromSouth_WNE_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.52s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromEast_SWN_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromSouth_WNE_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.11s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromSouth_WNE_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromWest_NES_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.03s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromWest_NES_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 33.66s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 33.56s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 35.78s
+[LLM raw]: 3
+[LLM mapped]: '3' -> rel=right
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromWest_NES_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 36.75s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromWest_NES_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=12
+[Auto-Move] Only one way: right. Skipping Agent.
+  [Result] Success: True | SR: 1 | PFS: 0.231 | StopReason: goal_reached | Steps: 13
+
+--- Episode 11 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (0, 5) -> Goal: (1, 7) | Shortest: 7 | Longest_steps: 16 | Max_steps: 16
+[Init] Start pos=(0, 5) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromSouth_WNE_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.28s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromSouth_WNE_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: right. Skipping Agent.
+  [Result] Success: True | SR: 1 | PFS: 0.000 | StopReason: goal_reached | Steps: 2
+
+--- Episode 12 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (0, 7) -> Goal: (10, 3) | Shortest: 8 | Longest_steps: 20 | Max_steps: 20
+[Init] Start pos=(0, 7) | facing=east (1) | arrival(virtual)=west (3)
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromWest_NES_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.24s
+[LLM] Qwen request FAILED after 17.24s (attempt 1/4): Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+LLM error: Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+  -> Episode Aborted due to llm_error.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: llm_error | Steps: 0
+
+--- Episode 13 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (3, 5) -> Goal: (7, 6) | Shortest: 8 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(3, 5) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.15s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromSouth_WNE_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromEast_SWN_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.92s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromEast_SWN_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=3
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromNorth_ESW_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.15s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromWest_NES_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.90s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.36s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.84s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromSouth_WNE_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.05s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromEast_SWN_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=10
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromNorth_ESW_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 40.03s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromWest_NES_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=12
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 48.80s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=14
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 48.38s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 53.13s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromSouth_WNE_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 49.17s
+[LLM raw]: 3
+[LLM mapped]: '3' -> rel=right
+  -> Max steps reached. Failure.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: max_steps | Steps: 18
+
+--- Episode 14 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (1, 7) -> Goal: (7, 6) | Shortest: 8 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(1, 7) | facing=west (3) | arrival(virtual)=east (1)
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromEast_SWN_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.31s
+[LLM] Qwen request FAILED after 20.31s (attempt 1/4): Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+LLM error: Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+  -> Episode Aborted due to llm_error.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: llm_error | Steps: 0
+
+--- Episode 15 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (7, 6) -> Goal: (0, 3) | Shortest: 8 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(7, 6) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromSouth_WNE_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.20s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromEast_SWN_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.72s
+[LLM raw]: 3
+[LLM mapped]: '3' -> rel=right
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.56s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromSouth_WNE_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.74s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromEast_SWN_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromNorth_ESW_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.04s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromWest_NES_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.85s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.44s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 36.83s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromSouth_WNE_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 43.73s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromEast_SWN_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=12
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromNorth_ESW_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 45.86s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromWest_NES_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=14
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 49.75s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=16
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 48.48s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+  -> Max steps reached. Failure.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: max_steps | Steps: 18
+
+--- Episode 16 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 5) -> Goal: (0, 7) | Shortest: 6 | Longest_steps: 20 | Max_steps: 20
+[Init] Start pos=(5, 5) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromSouth_WNE_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 18.30s
+[LLM] Qwen request FAILED after 18.30s (attempt 1/4): Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+LLM error: Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+  -> Episode Aborted due to llm_error.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: llm_error | Steps: 0
+
+--- Episode 17 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 1) -> Goal: (10, 8) | Shortest: 6 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(5, 1) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(5, 1) | triple_view=Node_000_X5_Y1_FromSouth_WNE_LFR.png | overview=Node_000_X5_Y1_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.98s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromSouth_WNE_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.32s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromEast_SWN_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromSouth_WNE_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 25.42s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromSouth_WNE_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 25.10s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromSouth_WNE_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromEast_SWN_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.04s
+[LLM raw]: 3
+[LLM mapped]: '3' -> rel=right
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromSouth_WNE_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromWest_NES_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.89s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromWest_NES_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=9
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 38.61s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromNorth_ESW_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.92s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromWest_NES_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 38.20s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+  [Result] Success: True | SR: 1 | PFS: 0.154 | StopReason: goal_reached | Steps: 13
+
+--- Episode 18 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 10) -> Goal: (5, 2) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(5, 10) | facing=east (1) | arrival(virtual)=west (3)
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromWest_NES_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.50s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(7, 10) | triple_view=Node_023_X7_Y10_FromWest_NES_LFR.png | overview=Node_023_X7_Y10_Overview.png | phase=normal | step=1
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromEast_SWN_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.56s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromEast_SWN_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=3
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromNorth_ESW_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.65s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromWest_NES_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 30.04s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 32.74s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 33.61s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromSouth_WNE_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 39.38s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromEast_SWN_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=11
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromNorth_ESW_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 36.40s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromWest_NES_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=13
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 37.84s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=15
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 39.14s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+  -> Max steps reached. Failure.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: max_steps | Steps: 17
+
+--- Episode 19 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 8) -> Goal: (0, 3) | Shortest: 8 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(5, 8) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.31s
+[LLM] Qwen request FAILED after 22.31s (attempt 1/4): Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+LLM error: Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+  -> Episode Aborted due to llm_error.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: llm_error | Steps: 0
+
+--- Episode 20 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (3, 7) -> Goal: (5, 10) | Shortest: 8 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(3, 7) | facing=south (2) | arrival(virtual)=north (0)
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromNorth_ESW_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.49s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.80s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromNorth_ESW_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.00s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromNorth_ESW_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=3
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromWest_NES_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=4
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 27.09s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromSouth_WNE_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=5
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromWest_NES_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=6
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 29.74s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromWest_NES_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=7
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromSouth_WNE_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 35.81s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=9
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=10
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 36.94s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromEast_SWN_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 41.75s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 41.35s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromWest_NES_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 39.96s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromSouth_WNE_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=14
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 45.03s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromEast_SWN_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 46.57s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 43.38s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(7, 6) | triple_view=Node_013_X7_Y6_FromWest_NES_LFR.png | overview=Node_013_X7_Y6_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 50.19s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+  -> Max steps reached. Failure.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: max_steps | Steps: 18
+
+--- Episode 21 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 6) -> Goal: (7, 10) | Shortest: 8 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(5, 6) | facing=south (2) | arrival(virtual)=north (0)
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 21.83s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=1
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=2
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 26.58s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromNorth_ESW_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 24.92s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromNorth_ESW_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 2) | triple_view=Node_003_X5_Y2_FromWest_NES_LFR.png | overview=Node_003_X5_Y2_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.67s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromSouth_WNE_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromWest_NES_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 37.35s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromWest_NES_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=8
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromSouth_WNE_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 40.47s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=10
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 39.02s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromEast_SWN_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=12
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 42.69s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromNorth_ESW_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 45.73s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromNorth_ESW_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=14
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromEast_SWN_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 50.91s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 3) | triple_view=Node_005_X3_Y3_FromNorth_ESW_LFR.png | overview=Node_005_X3_Y3_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 52.98s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 2) | triple_view=Node_002_X3_Y2_FromNorth_ESW_LFR.png | overview=Node_002_X3_Y2_Overview.png | phase=normal | step=17
+[Auto-Move] Only one way: left. Skipping Agent.
+  -> Max steps reached. Failure.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: max_steps | Steps: 18
+
+--- Episode 22 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (0, 7) -> Goal: (7, 3) | Shortest: 7 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(0, 7) | facing=east (1) | arrival(virtual)=west (3)
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromWest_NES_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 17.35s
+[LLM] Qwen request FAILED after 17.35s (attempt 1/4): Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+LLM error: Qwen call failed, status=400, msg=Input data may contain inappropriate content. For details, see: https://help.aliyun.com/zh/model-studio/error-code#inappropriate-content
+  -> Episode Aborted due to llm_error.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: llm_error | Steps: 0
+
+--- Episode 23 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (0, 3) -> Goal: (7, 6) | Shortest: 8 | Longest_steps: 19 | Max_steps: 19
+[Init] Start pos=(0, 3) | facing=north (0) | arrival(virtual)=south (2)
+[Obs] pos=(0, 3) | triple_view=Node_004_X0_Y3_FromSouth_WNE_LFR.png | overview=Node_004_X0_Y3_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 16.31s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 5) | triple_view=Node_009_X0_Y5_FromSouth_WNE_LFR.png | overview=Node_009_X0_Y5_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 23.75s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(0, 7) | triple_view=Node_015_X0_Y7_FromSouth_WNE_LFR.png | overview=Node_015_X0_Y7_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromWest_NES_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 26.59s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromWest_NES_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.63s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=6
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=7
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 31.31s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=8
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 34.29s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromSouth_WNE_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=9
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 39.54s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(1, 10) | triple_view=Node_021_X1_Y10_FromEast_SWN_LFR.png | overview=Node_021_X1_Y10_Overview.png | phase=normal | step=10
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(1, 7) | triple_view=Node_016_X1_Y7_FromNorth_ESW_LFR.png | overview=Node_016_X1_Y7_Overview.png | phase=normal | step=11
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 48.40s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(3, 7) | triple_view=Node_017_X3_Y7_FromWest_NES_LFR.png | overview=Node_017_X3_Y7_Overview.png | phase=normal | step=12
+[Auto-Move] Only one way: right. Skipping Agent.
+[Obs] pos=(3, 5) | triple_view=Node_010_X3_Y5_FromNorth_ESW_LFR.png | overview=Node_010_X3_Y5_Overview.png | phase=normal | step=13
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 47.31s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+[Obs] pos=(5, 5) | triple_view=Node_011_X5_Y5_FromWest_NES_LFR.png | overview=Node_011_X5_Y5_Overview.png | phase=normal | step=14
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(5, 6) | triple_view=Node_012_X5_Y6_FromSouth_WNE_LFR.png | overview=Node_012_X5_Y6_Overview.png | phase=normal | step=15
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 49.12s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 8) | triple_view=Node_018_X5_Y8_FromSouth_WNE_LFR.png | overview=Node_018_X5_Y8_Overview.png | phase=normal | step=16
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 51.86s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(5, 10) | triple_view=Node_022_X5_Y10_FromSouth_WNE_LFR.png | overview=Node_022_X5_Y10_Overview.png | phase=normal | step=17
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 61.13s
+[LLM raw]: 1
+[LLM mapped]: '1' -> rel=left
+  -> Max steps reached. Failure.
+  [Result] Success: False | SR: 0 | PFS: 0.000 | StopReason: max_steps | Steps: 18
+
+--- Episode 24 | Maze_11x11_D2_T10_J10+2 | mode=llm ---
+Start: (5, 3) -> Goal: (5, 8) | Shortest: 6 | Longest_steps: 18 | Max_steps: 18
+[Init] Start pos=(5, 3) | facing=east (1) | arrival(virtual)=west (3)
+[Obs] pos=(5, 3) | triple_view=Node_006_X5_Y3_FromWest_NES_LFR.png | overview=Node_006_X5_Y3_Overview.png | phase=normal | step=0
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 20.57s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(7, 3) | triple_view=Node_007_X7_Y3_FromWest_NES_LFR.png | overview=Node_007_X7_Y3_Overview.png | phase=normal | step=1
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 22.41s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 3) | triple_view=Node_008_X10_Y3_FromWest_NES_LFR.png | overview=Node_008_X10_Y3_Overview.png | phase=normal | step=2
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(10, 6) | triple_view=Node_014_X10_Y6_FromSouth_WNE_LFR.png | overview=Node_014_X10_Y6_Overview.png | phase=normal | step=3
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 28.97s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+[Obs] pos=(10, 8) | triple_view=Node_020_X10_Y8_FromSouth_WNE_LFR.png | overview=Node_020_X10_Y8_Overview.png | phase=normal | step=4
+[Auto-Move] Only one way: left. Skipping Agent.
+[Obs] pos=(7, 8) | triple_view=Node_019_X7_Y8_FromEast_SWN_LFR.png | overview=Node_019_X7_Y8_Overview.png | phase=normal | step=5
+[LLM] Sending request (provider=qwen_dashscope, model=qwen-vl-plus)...
+[LLM] Response received from Qwen in 33.86s
+[LLM raw]: 2
+[LLM mapped]: '2' -> rel=front
+  [Result] Success: True | SR: 1 | PFS: 0.667 | StopReason: goal_reached | Steps: 6
+\n[Maze_11x11_D2_T10_J10+2] SUMMARY (mode=llm):
+  SR: 0.3750, Avg PFS: 0.1156
+  Episodes: 24, Errors: 6
+Staged results saved to: D:/Nav_images/results_NUM-forward_qwen-vl-plus/maze_result_qwen-vl-plus_llm_LFR_vector_staged_Maze_11x11_D2_T10_J10+2.json
+
+========== Maze: Maze_11x11_D2_T9_J10+1 ==========
+[Maze_11x11_D2_T9_J10+1] Nodes: 22, Target Episodes: 44
+
+========== Maze: Maze_11x11_D6_T8_J8+0 ==========
+[Maze_11x11_D6_T8_J8+0] Nodes: 22, Target Episodes: 44
+
+========== Maze: Maze_5x5_D3_T2_J1+0 ==========
+[Maze_5x5_D3_T2_J1+0] Nodes: 6, Target Episodes: 12
+
+========== Maze: Maze_5x5_D4_T3_J2+0 ==========
+[Maze_5x5_D4_T3_J2+0] Nodes: 9, Target Episodes: 18
+
+========== Maze: Maze_7x7_D0_T7_J4+1 ==========
+[Maze_7x7_D0_T7_J4+1] Nodes: 12, Target Episodes: 24
+
+========== Maze: Maze_7x7_D2_T4_J2+1 ==========
+[Maze_7x7_D2_T4_J2+1] Nodes: 9, Target Episodes: 18
+
+========== Maze: Maze_7x7_D2_T5_J4+1 ==========
+[Maze_7x7_D2_T5_J4+1] Nodes: 12, Target Episodes: 24
+
+========== Maze: Maze_9x9_D1_T7_J9+1 ==========
+[Maze_9x9_D1_T7_J9+1] Nodes: 18, Target Episodes: 36
+
+========== Maze: Maze_9x9_D3_T3_J7+1 ==========
+[Maze_9x9_D3_T3_J7+1] Nodes: 14, Target Episodes: 28
+
+========== Maze: Maze_9x9_D5_T4_J7+1 ==========
+[Maze_9x9_D5_T4_J7+1] Nodes: 17, Target Episodes: 34
+
+================ GLOBAL RESULTS (qwen-vl-plus) ================
+AgentMode: llm
+
+[GLOBAL | OVERALL (includes errors)]
+Total Episodes : 24
+SR            : 0.3750
+Avg PFS       : 0.1156
+Errors        : 6
+
+[GLOBAL | VALID-ONLY (error-free episodes)]
+Total Episodes : 18
+SR            : 0.5000
+Avg PFS       : 0.1541
+Errors        : 0
+All results saved to: D:/Nav_images/results_NUM-forward_qwen-vl-plus/maze_result_qwen-vl-plus_llm_LFR_vector.json

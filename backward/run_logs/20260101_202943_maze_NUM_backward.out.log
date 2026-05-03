@@ -1,0 +1,6 @@
+🚀 Starting Navigation Experiments. Provider: qwen_dashscope, Model: qwen-vl-plus, AgentMode: llm
+🧾 Error log file: D:/Nav_images/results_NUM-backward_qwen-vl-plus\error_logs\errors_qwen-vl-plus_llm_20260101_202943.jsonl
+
+========== Maze: Maze_11x11_D2_T10_J10+2 ==========
+[Maze_11x11_D2_T10_J10+2] Nodes: 24, Target Episodes: 48
+[Maze_11x11_D2_T10_J10+2] Loaded precomputed episode pairs: 40
