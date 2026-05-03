@@ -1,1 +1,0 @@
-{'script': 'maze_NUM_forward.py', 'status': 'OK', 'returncode': 0, 'elapsed_sec': 0.06233668327331543, 'stdout_log': 'D:\\HaoXingjia\\LLM_SC\\py_Maze_cursor\\forward-qwen_vaild\\run_logs\\20260423_104324_maze_NUM_forward.out.log', 'stderr_log': 'D:\\HaoXingjia\\LLM_SC\\py_Maze_cursor\\forward-qwen_vaild\\run_logs\\20260423_104324_maze_NUM_forward.err.log'}
